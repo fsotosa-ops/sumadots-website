@@ -1,23 +1,101 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function Clients() {
   const t = useTranslations('Clients');
-  // Sustituir con tus rutas reales en public/logos/
-  const logos = ["/logo1.svg", "/logo2.svg", "/logo3.svg", "/logo4.svg"]; 
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const clients = [
+    {
+      name: 'Factor Social',
+      logo: '/assets/clients/factor-social.svg',
+      className: 'dark:invert',
+      scale: 'scale-[0.8]' 
+    },
+    {
+      name: 'WebCarga',
+      logoLight: '/assets/clients/webcarga-lightmode.png',
+      logoDark: '/assets/clients/webcarga.png',
+      isDynamic: true,
+      className: '',
+      scaleDark: 'scale-[2.0]', 
+      scaleLight: 'scale-[0.65]' 
+    },
+    {
+      name: 'Fundación Summer',
+      logoLight: '/assets/clients/fsummer-lightmode.png', 
+      logoDark: '/assets/clients/fsummer-darkmode.png',
+      isDynamic: true,
+      className: '',
+      // AJUSTE FINAL: Reducimos de 0.6 a 0.45 para que en Dark no se vea gigante
+      scaleDark: 'scale-[0.45]', 
+      // Mantenemos la versión Light que ya validaste como perfecta
+      scaleLight: 'scale-[2.5] translate-y-3'  
+    }
+  ];
 
   return (
-    <section className="py-20 relative z-30">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <p className="text-zinc-500 text-xs uppercase tracking-[0.3em] mb-12">{t('title')}</p>
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all">
-          {logos.map((logo, i) => (
-            <div key={i} className="h-8 w-32 relative">
-               {/* Placeholder si no tienes los archivos aún */}
-               <div className="bg-zinc-800 h-full w-full rounded animate-pulse" />
-            </div>
-          ))}
+    // bg-background garantiza el negro puro #050505 del screenshot
+    <section className="relative py-20 bg-background transition-colors duration-500 overflow-hidden" id="clients">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <div className="flex flex-col items-center mb-16 text-center">
+          <motion.h2 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4"
+          >
+            {t('title')}
+          </motion.h2>
+          <div className="h-1 w-12 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.4)]" />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 md:gap-24 items-center justify-items-center">
+          {clients.map((client, index) => {
+            let currentLogo = client.logo;
+            let currentScale = client.scale || 'scale-100';
+
+            if (client.isDynamic && mounted) {
+              const isDark = resolvedTheme === 'dark';
+              currentLogo = isDark ? client.logoDark : client.logoLight;
+              currentScale = isDark ? (client.scaleDark || 'scale-100') : (client.scaleLight || 'scale-100');
+            }
+
+            return (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group relative flex items-center justify-center h-24 w-full cursor-pointer"
+              >
+                {/* - Sin redimensionamiento en hover (fijo).
+                  - Efecto neón azul con drop-shadow al pasar el cursor.
+                */}
+                <div className={`relative w-full h-full transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.6)] ${currentScale}`}>
+                  {currentLogo && (
+                    <Image
+                      src={currentLogo}
+                      alt={client.name}
+                      fill
+                      className={`object-contain ${client.className || ''}`}
+                    />
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
