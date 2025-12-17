@@ -1,0 +1,19 @@
+{
+  "Index": {
+    "title": "Bienvenido a Sumadots",
+    "description": "Automatización e IA para tu negocio en Chile."
+  },
+  "Navbar": {
+    "blog": "Blog",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "badge": "Nueva era de automatización",
+    "title": "Escala tu negocio con",
+    "titleAccent": "Inteligencia Artificial",
+    "description": "Transformamos procesos manuales en flujos de trabajo autónomos y eficientes.",
+    "ctaPrimary": "Comenzar ahora",
+    "ctaSecondary": "Ver servicios"
+  }
+}

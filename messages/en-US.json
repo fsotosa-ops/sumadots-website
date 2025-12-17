@@ -1,0 +1,37 @@
+{
+  "Navbar": {
+    "blog": "Blog",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "A new era of automation",
+    "title": "Scale your business with",
+    "titleAccent": "Artificial Intelligence",
+    "description": "We transform manual processes into autonomous and efficient workflows for modern companies.",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "View Services"
+  },
+  "Services": {
+    "automation": {
+      "title": "Autonomous Agents",
+      "desc": "We implement intelligent bots that manage emails, schedules, and repetitive tasks 24/7."
+    },
+    "analysis": {
+      "title": "AI Data Analysis",
+      "desc": "Turn raw data into strategic decisions using deep learning models."
+    },
+    "optimization": {
+      "title": "Optimization",
+      "desc": "Maximum efficiency in workflows."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "desc": "Tailored tech strategy."
+    }
+  },
+  "Index": {
+    "title": "Welcome to Sumadots",
+    "description": "Automation and AI for your business."
+  }
+}

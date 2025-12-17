@@ -1,11 +1,16 @@
-import {useTranslations} from 'next-intl';
- 
+import Hero from '../components/Hero';
+import ServicesBento from '../components/ServicesBento';
+import SectionWrapper from '../components/SectionWrapper';
+
 export default function HomePage() {
-  const t = useTranslations('Index');
   return (
-    <main>
-      <h1>{t('title')}</h1>
-      <p>{t('description')}</p>
-    </main>
+    <>
+      <Hero />
+      <SectionWrapper>
+        <div id="services">
+          <ServicesBento />
+        </div>
+      </SectionWrapper>
+    </>
   );
 }

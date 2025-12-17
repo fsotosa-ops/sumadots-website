@@ -1,0 +1,37 @@
+{
+  "Navbar": {
+    "blog": "Blog",
+    "services": "Serviços",
+    "contact": "Contato"
+  },
+  "Hero": {
+    "badge": "Uma nova era de automação",
+    "title": "Escale seu negócio com",
+    "titleAccent": "Inteligência Artificial",
+    "description": "Transformamos processos manuais em fluxos de trabalho autônomos e eficientes para empresas modernas.",
+    "ctaPrimary": "Começar agora",
+    "ctaSecondary": "Ver serviços"
+  },
+  "Services": {
+    "automation": {
+      "title": "Agentes Autônomos",
+      "desc": "Implementamos bots inteligentes que gerenciam e-mails, agendas e tarefas repetitivas 24 horas por dia."
+    },
+    "analysis": {
+      "title": "Análise de Dados com IA",
+      "desc": "Transforme dados brutos em decisões estratégicas usando modelos de deep learning."
+    },
+    "optimization": {
+      "title": "Otimização",
+      "desc": "Eficiência máxima nos fluxos."
+    },
+    "consulting": {
+      "title": "Consultoria",
+      "desc": "Estratégia tech sob medida."
+    }
+  },
+  "Index": {
+    "title": "Bem-vindo à Sumadots",
+    "description": "Automação e IA para o seu negócio."
+  }
+}

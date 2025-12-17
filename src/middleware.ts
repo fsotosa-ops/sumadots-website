@@ -5,5 +5,5 @@ export default createMiddleware(routing);
  
 export const config = {
   // Matcher para saltar carpetas internas como _next o api
-  matcher: ['/', '/(es|en)/:path*']
+  matcher: ['/', '/(es-CL|en-US|pt-BR)/:path*']
 };
