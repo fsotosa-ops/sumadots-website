@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Mapeo explícito para solucionar el error de compilación */
+  /* Mapeo de variables para Tailwind CSS 4 */
   --color-border: var(--border);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,6 +12,7 @@
 }
 
 :root {
+  /* Tema Claro */
   --background: #ffffff;
   --foreground: #050505;
   --border: #e5e7eb;
@@ -19,21 +20,26 @@
 }
 
 .dark {
+  /* Tema Oscuro */
   --background: #050505;
   --foreground: #ffffff;
-  --border: rgba(255, 255, 255, 0.08); /* Borde suave para modo oscuro */
+  --border: rgba(255, 255, 255, 0.08);
 }
 
 @layer base {
   * {
-    /* Usamos la variable directa en lugar de @apply para evitar fallos de build */
     border-color: var(--border);
   }
+
   html {
-    color-scheme: dark;
-    background-color: #050505; /* Previene el flash blanco */
+    /* SOLUCIÓN: Usar la variable de fondo en lugar de un color fijo para evitar el flash blanco */
+    background-color: var(--background);
+    color-scheme: light dark;
+    @apply scroll-smooth;
   }
+
   body {
+    /* Se aplican los colores de fondo y texto del sistema automáticamente */
     @apply bg-background text-foreground transition-colors duration-300;
     -webkit-font-smoothing: antialiased;
   }

@@ -98,7 +98,7 @@ export default async function LocaleLayout({
                 {children}
               </main>
 
-              <footer className="py-12 border-t border-white/5 bg-black/5 text-center text-[10px] text-zinc-500 tracking-[0.2em] uppercase">
+              <footer className="py-12 border-t border-border bg-muted/20 text-center text-[10px] text-muted-foreground tracking-[0.2em] uppercase transition-colors duration-500">
                 <p>© {new Date().getFullYear()} SUMADOTS. AI DRIVEN FUTURE.</p>
               </footer>
             </div>
