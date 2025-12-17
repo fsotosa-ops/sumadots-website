@@ -40,5 +40,13 @@
   },
   "Partners": {
     "title": "Nossos Parceiros Estratégicos"
+  },
+  "Footer": {
+    "rights": "SUMADOTS. O FUTURO IMPULSIONADO POR IA."
+  },
+  "WhatsApp": {
+    "status": "Online",
+    "message": "Olá, eu sou o Pipe 👋. Se você tiver alguma dúvida, envie-me uma mensagem e com certeza verei como posso ajudá-lo.",
+    "button": "Abrir WhatsApp"
   }
 }

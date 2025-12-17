@@ -1,7 +1,12 @@
 {
+  "Index": {
+    "title": "Welcome to Sumadots",
+    "description": "Automation and AI for your business."
+  },
   "Navbar": {
     "blog": "Blog",
     "services": "Services",
+    "clients": "Clients",
     "contact": "Contact"
   },
   "Hero": {
@@ -36,8 +41,12 @@
   "Partners": {
     "title": "Our Strategic Partners"
   },
-  "Index": {
-    "title": "Welcome to Sumadots",
-    "description": "Automation and AI for your business."
+  "Footer": {
+    "rights": "SUMADOTS. AI DRIVEN FUTURE."
+  },
+  "WhatsApp": {
+    "status": "Online",
+    "message": "Hi, I'm Pipe 👋. If you have any questions, send me a message and I'll see how I can help you.",
+    "button": "Open WhatsApp"
   }
 }

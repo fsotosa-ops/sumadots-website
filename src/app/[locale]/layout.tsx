@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/app/components/Navbar';
-import { ThemeProvider } from "@/components/ui/theme-provider"; // Ruta confirmada por el usuario
+import WhatsAppWidget from '@/app/components/WhatsAppWidget'; // Widget con diseño mockup y Roboto
+import { ThemeProvider } from "@/components/ui/theme-provider";
 import "@/app/globals.css";
 
 // 1. Configuración de fuentes premium Geist
@@ -19,7 +20,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 2. SEO Regionalizado (en-US, es-CL, pt-BR)
+// 2. SEO Regionalizado según el idioma seleccionado
 export async function generateMetadata({ 
   params 
 }: { 
@@ -57,7 +58,7 @@ export async function generateMetadata({
   };
 }
 
-// 3. Layout Maestro con soporte Dark/Light Mode
+// 3. Layout Maestro
 export default async function LocaleLayout({
   children,
   params
@@ -79,7 +80,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    // suppressHydrationWarning es vital en el <html> para next-themes
+    // suppressHydrationWarning es necesario para el cambio de tema de next-themes
     <html lang={locale} suppressHydrationWarning className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-blue-500/30`}>
         {/* Provider para cambio de modo Claro/Oscuro */}
@@ -89,7 +90,9 @@ export default async function LocaleLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* Provider para el sistema de traducciones */}
+          {/* IMPORTANTE: NextIntlClientProvider debe envolver a cualquier componente 
+              que use 'useTranslations' para evitar errores de contexto.
+          */}
           <NextIntlClientProvider messages={messages}>
             <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300">
               <Navbar />
@@ -98,13 +101,27 @@ export default async function LocaleLayout({
                 {children}
               </main>
 
-              <footer className="py-12 border-t border-border bg-muted/20 text-center text-[10px] text-muted-foreground tracking-[0.2em] uppercase transition-colors duration-500">
-                <p>© {new Date().getFullYear()} SUMADOTS. AI DRIVEN FUTURE.</p>
-              </footer>
+              {/* Widget de contacto persistente (WhatsApp de Pipe). 
+                  Se coloca aquí para que no desaparezca al navegar entre páginas.
+              */}
+              <WhatsAppWidget />
+
+              {/* Footer con traducciones dinámicas */}
+              <FooterSection />
             </div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
+  );
+}
+
+// Sub-componente para manejar las traducciones del Footer dentro de la jerarquía del layout
+function FooterSection() {
+  const t = useTranslations('Footer');
+  return (
+    <footer className="py-12 border-t border-border bg-muted/20 text-center text-[10px] text-muted-foreground tracking-[0.2em] uppercase transition-colors duration-500">
+      <p>© {new Date().getFullYear()} {t('rights')}</p>
+    </footer>
   );
 }
