@@ -1,11 +1,16 @@
 {
+  "Index": {
+    "title": "Bem-vindo à Sumadots",
+    "description": "Automação e IA para o seu negócio no Brasil."
+  },
   "Navbar": {
     "blog": "Blog",
     "services": "Serviços",
+    "clients": "Clientes",
     "contact": "Contato"
   },
   "Hero": {
-    "badge": "Uma nova era de automação",
+    "badge": "Uma nova era de automação no Brasil",
     "title": "Escale seu negócio com",
     "titleAccent": "Inteligência Artificial",
     "description": "Transformamos processos manuais em fluxos de trabalho autônomos e eficientes para empresas modernas.",
@@ -23,15 +28,17 @@
     },
     "optimization": {
       "title": "Otimização",
-      "desc": "Eficiência máxima nos fluxos."
+      "desc": "Eficiência máxima nos fluxos de trabalho."
     },
     "consulting": {
-      "title": "Consultoria",
-      "desc": "Estratégia tech sob medida."
+      "title": "Consultoria Tech",
+      "desc": "Estratégia tecnológica sob medida para sua empresa."
     }
   },
-  "Index": {
-    "title": "Bem-vindo à Sumadots",
-    "description": "Automação e IA para o seu negócio."
+  "Clients": {
+    "title": "Empresas que confiam em nós"
+  },
+  "Partners": {
+    "title": "Nossos Parceiros Estratégicos"
   }
 }

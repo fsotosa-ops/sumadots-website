@@ -6,14 +6,39 @@
   "Navbar": {
     "blog": "Blog",
     "services": "Servicios",
+    "clients": "Clientes",
     "contact": "Contacto"
   },
   "Hero": {
-    "badge": "Nueva era de automatización",
+    "badge": "Nueva era de automatización en Chile",
     "title": "Escala tu negocio con",
     "titleAccent": "Inteligencia Artificial",
-    "description": "Transformamos procesos manuales en flujos de trabajo autónomos y eficientes.",
+    "description": "Transformamos procesos manuales en flujos de trabajo autónomos y eficientes para empresas modernas.",
     "ctaPrimary": "Comenzar ahora",
     "ctaSecondary": "Ver servicios"
+  },
+  "Services": {
+    "automation": {
+      "title": "Agentes Autónomos",
+      "desc": "Implementamos bots inteligentes que gestionan correos, agendas y tareas repetitivas 24/7."
+    },
+    "analysis": {
+      "title": "Análisis de Datos con IA",
+      "desc": "Convierte datos crudos en decisiones estratégicas mediante modelos de aprendizaje profundo."
+    },
+    "optimization": {
+      "title": "Optimización",
+      "desc": "Eficiencia máxima en flujos de trabajo."
+    },
+    "consulting": {
+      "title": "Consultoría Tech",
+      "desc": "Estrategia tecnológica a medida para tu empresa."
+    }
+  },
+  "Clients": {
+    "title": "Empresas que confían en nosotros"
+  },
+  "Partners": {
+    "title": "Nuestros Partners Estratégicos"
   }
 }

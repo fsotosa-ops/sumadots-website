@@ -5,9 +5,10 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/app/components/Navbar';
+import { ThemeProvider } from "@/components/ui/theme-provider"; // Ruta confirmada por el usuario
 import "@/app/globals.css";
 
-// Configuración de fuentes premium
+// 1. Configuración de fuentes premium Geist
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Configuración de SEO Regional
+// 2. SEO Regionalizado (en-US, es-CL, pt-BR)
 export async function generateMetadata({ 
   params 
 }: { 
@@ -33,17 +34,17 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<string, string> = {
-    'es-CL': "Optimizamos tus procesos con inteligencia artificial de vanguardia.",
-    'en-US': "We optimize your business processes with cutting-edge AI technology.",
-    'pt-BR': "Otimizamos seus processos de negócios com tecnologia de IA de ponta."
+    'es-CL': "Optimizamos tus procesos con inteligencia artificial de vanguardia para escalar tu negocio.",
+    'en-US': "We optimize your business processes with cutting-edge AI technology to scale your business.",
+    'pt-BR': "Otimizamos seus processos de negócios com tecnologia de IA de ponta para expandir seus negócios."
   };
 
   return {
     title: {
-      default: titles[locale] || titles['es-CL'],
+      default: titles[locale] || titles['en-US'],
       template: `%s | Sumadots`
     },
-    description: descriptions[locale] || descriptions['es-CL'],
+    description: descriptions[locale] || descriptions['en-US'],
     metadataBase: new URL('https://www.sumadots.com'),
     alternates: {
       canonical: `/${locale}`,
@@ -56,6 +57,7 @@ export async function generateMetadata({
   };
 }
 
+// 3. Layout Maestro con soporte Dark/Light Mode
 export default async function LocaleLayout({
   children,
   params
@@ -65,34 +67,43 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  // Validación de seguridad para el idioma
+  // Validación de seguridad para idiomas soportados
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // Habilitar el renderizado estático
+  // Habilitar renderizado estático
   setRequestLocale(locale);
+
+  // Cargar diccionarios JSON correspondientes
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning className="dark scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#050505] text-white selection:bg-blue-500/30`}>
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex flex-col min-h-screen">
-            {/* Navbar con el nuevo selector de banderas */}
-            <Navbar />
-            
-            {/* Contenedor principal para la Home y Blog */}
-            <main className="flex-grow pt-20">
-              {children}
-            </main>
+    // suppressHydrationWarning es vital en el <html> para next-themes
+    <html lang={locale} suppressHydrationWarning className="scroll-smooth">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-blue-500/30`}>
+        {/* Provider para cambio de modo Claro/Oscuro */}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {/* Provider para el sistema de traducciones */}
+          <NextIntlClientProvider messages={messages}>
+            <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300">
+              <Navbar />
+              
+              <main className="flex-grow">
+                {children}
+              </main>
 
-            {/* Footer Minimalista */}
-            <footer className="py-12 border-t border-white/5 bg-black/20 text-center text-xs text-zinc-500 tracking-widest">
-              <p>© {new Date().getFullYear()} SUMADOTS. {locale === 'pt-BR' ? 'Todos os direitos reservados.' : locale === 'en-US' ? 'All rights reserved.' : 'Todos los derechos reservados.'}</p>
-            </footer>
-          </div>
-        </NextIntlClientProvider>
+              <footer className="py-12 border-t border-white/5 bg-black/5 text-center text-[10px] text-zinc-500 tracking-[0.2em] uppercase">
+                <p>© {new Date().getFullYear()} SUMADOTS. AI DRIVEN FUTURE.</p>
+              </footer>
+            </div>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
