@@ -1,61 +1,42 @@
 {
-  "Index": {
-    "title": "Welcome to Sumadots",
-    "description": "Automation and AI for your business."
-  },
-  "Navbar": {
-    "blog": "Blog",
-    "services": "Services",
-    "clients": "Clients",
-    "contact": "Contact",
-    "schedule": "Schedule Call"
-  },
+  "Navbar": { "blog": "Blog", "services": "Services", "clients": "Clients", "contact": "Contact", "schedule": "Schedule Call" },
   "Hero": {
-    "badge": "A new era of automation",
-    "title": "Scale your business with",
-    "titleAccent": "Artificial Intelligence",
-    "description": "We transform manual processes into autonomous and efficient workflows for modern companies.",
+    "badge": "Your strategic tech partner",
+    "title": "Scale your business with an",
+    "titleAccent": "On-Demand CTO",
+    "description": "You don't need to hire an expensive tech team. We are your IT and AI department, focused on optimizing your processes and reducing operating costs from day one.",
     "ctaPrimary": "Get Started",
     "ctaSecondary": "View Services"
   },
   "Services": {
-    "automation": {
-      "title": "Autonomous Agents",
-      "desc": "We implement intelligent bots that manage emails, schedules, and repetitive tasks 24/7."
-    },
-    "analysis": {
-      "title": "AI Data Analysis",
-      "desc": "Turn raw data into strategic decisions using deep learning models."
-    },
-    "optimization": {
-      "title": "Optimization",
-      "desc": "Maximum efficiency in workflows."
-    },
-    "consulting": {
-      "title": "Consulting",
-      "desc": "Tailored tech strategy."
-    }
+    "title": "Our Solutions",
+    "automation": { "title": "Autonomous Agents", "desc": "Bots that manage your operations and clients 24/7." },
+    "analysis": { "title": "AI Analysis", "desc": "We turn your data into profitable business decisions." },
+    "optimization": { "title": "Optimization", "desc": "Maximum efficiency in every step of your workflow." },
+    "consulting": { "title": "Tech Consulting", "desc": "Strategic technical direction for business owners." }
   },
-  "Clients": {
-    "title": "Trusted by industry leaders"
+  "Comparison": {
+    "title": "Your Tech",
+    "titleAccent": "Partner",
+    "colCategory": "Category",
+    "colSumadots": "With Sumadots (CTOaaS)",
+    "colYourPath": "Your Own Path",
+    "row1": ["Time to Market", "6-12 weeks with ready-made stack", "6-18 months building from scratch"],
+    "row2": ["CTO Support", "Expert CTO included from day one", "Need to recruit or learn by error"],
+    "row3": ["Development Team", "Instant access to AI specialists", "High cost and time recruiting talent"],
+    "row4": ["Upfront Costs", "Controlled monthly fixed fee", "High variable costs and hidden risks"],
+    "row5": ["Execution Risk", "Low. Battle-tested scalable processes", "High. Uncertainty and tech delays"]
   },
-  "Partners": {
-    "title": "Our Strategic Partners"
-  },
-  "Footer": {
-    "rights": "SUMADOTS. AI DRIVEN FUTURE."
-  },
-  "WhatsApp": {
-    "status": "Online",
-    "message": "Hi, I'm Pipe 👋. If you have any questions, send me a message and I'll see how I can help you.",
-    "button": "Open WhatsApp"
-  },
+  "Clients": { "title": "Trusted by industry leaders" },
+  "Partners": { "title": "Our Strategic Partners" },
+  "Footer": { "rights": "SUMADOTS. AI DRIVEN FUTURE." },
+  "WhatsApp": { "status": "Online", "message": "Hi, I'm Pipe 👋. How can I help?", "button": "Open WhatsApp" },
   "CTA": {
     "title": "Ready to",
     "titleAccent": "Scale?",
-    "description": "Book a 30-minute strategic session to diagnose your processes and find AI automation opportunities.",
-    "button": "See availability on Calendar",
-    "socialProof": "Join the companies that already automate with us.",
+    "description": "Book a 15-minute strategic session to diagnose your processes.",
+    "button": "Check availability on Calendar",
+    "socialProof": "Join the companies that already delegated their tech to us.",
     "formTitle": "Leave us a message",
     "formName": "Name",
     "formEmail": "Corporate Email",

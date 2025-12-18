@@ -1,8 +1,4 @@
 {
-  "Index": {
-    "title": "Bienvenido a Sumadots",
-    "description": "Automatización e IA para tu negocio en Chile."
-  },
   "Navbar": {
     "blog": "Blog",
     "services": "Servicios",
@@ -11,51 +7,42 @@
     "schedule": "Agendar Call"
   },
   "Hero": {
-    "badge": "Nueva era de automatización en Chile",
-    "title": "Escala tu negocio con",
-    "titleAccent": "Inteligencia Artificial",
-    "description": "Transformamos procesos manuales en flujos de trabajo autónomos y eficientes para empresas modernas.",
+    "badge": "Tu socio tecnológico estratégico",
+    "title": "Escala tu negocio con un",
+    "titleAccent": "CTO On-Demand",
+    "description": "No necesitas contratar un equipo técnico costoso. Somos tu departamento de tecnología e IA, enfocado en optimizar tus procesos y reducir tus costos operativos desde el primer día.",
     "ctaPrimary": "Comenzar ahora",
     "ctaSecondary": "Ver servicios"
   },
   "Services": {
-    "automation": {
-      "title": "Agentes Autónomos",
-      "desc": "Implementamos bots inteligentes que gestionan correos, agendas y tareas repetitivas 24/7."
-    },
-    "analysis": {
-      "title": "Análisis de Datos con IA",
-      "desc": "Convierte datos crudos en decisiones estratégicas mediante modelos de aprendizaje profundo."
-    },
-    "optimization": {
-      "title": "Optimización",
-      "desc": "Eficiencia máxima en flujos de trabajo."
-    },
-    "consulting": {
-      "title": "Consultoría Tech",
-      "desc": "Estrategia tecnológica a medida para tu empresa."
-    }
+    "title": "Nuestras Soluciones",
+    "automation": { "title": "Agentes Autónomos", "desc": "Bots que gestionan tus operaciones y clientes 24/7." },
+    "analysis": { "title": "Análisis con IA", "desc": "Convertimos tus datos en decisiones de negocio rentables." },
+    "optimization": { "title": "Optimización", "desc": "Eficiencia máxima en cada paso de tu flujo de trabajo." },
+    "consulting": { "title": "Consultoría Tech", "desc": "Dirección técnica estratégica para dueños de negocio." }
   },
-  "Clients": {
-    "title": "Empresas que confían en nosotros"
+  "Comparison": {
+    "title": "Tu socio",
+    "titleAccent": "Tecnológico",
+    "colCategory": "Categoría",
+    "colSumadots": "Con Sumadots (CTOaaS)",
+    "colYourPath": "Tu propio camino",
+    "row1": ["Tiempo de implementación", "6-12 semanas con stack listo para usar", "6-18 meses construyendo desde cero"],
+    "row2": ["Dirección Técnica", "CTO experto incluido desde el día 1", "Necesitas reclutar o aprender por error"],
+    "row3": ["Equipo de Desarrollo", "Acceso instantáneo a especialistas en IA", "Alto costo y tiempo en búsqueda de talento"],
+    "row4": ["Inversión Inicial", "Fee mensual fijo y controlado", "Altos costos variables y riesgos ocultos"],
+    "row5": ["Riesgo de ejecución", "Bajo. Procesos probados y escalables", "Alto. Incertidumbre y retrasos técnicos"]
   },
-  "Partners": {
-    "title": "Nuestros Partners Estratégicos"
-  },
-  "Footer": {
-    "rights": "SUMADOTS. EL FUTURO IMPULSADO POR IA."
-  },
-  "WhatsApp": {
-    "status": "En línea",
-    "message": "Hola, soy Pipe 👋. Si tienes alguna consulta mándame un mensaje y de seguro veo cómo te puedo ayudar.",
-    "button": "Abrir WhatsApp"
-  },
+  "Clients": { "title": "Empresas que confían en nosotros" },
+  "Partners": { "title": "Nuestros Partners Estratégicos" },
+  "Footer": { "rights": "SUMADOTS. EL FUTURO IMPULSADO POR IA." },
+  "WhatsApp": { "status": "En línea", "message": "Hola, soy Pipe 👋. ¿Cómo puedo ayudarte?", "button": "Abrir WhatsApp" },
   "CTA": {
     "title": "¿Listo para",
     "titleAccent": "Escalar?",
-    "description": "Reserva una sesión estratégica de 30 min para diagnosticar tus procesos y encontrar oportunidades de automatización con IA.",
+    "description": "Reserva una sesión estratégica de 15 min para diagnosticar tus procesos.",
     "button": "Ver disponibilidad en Calendar",
-    "socialProof": "Únete a las empresas que ya automatizan con nosotros.",
+    "socialProof": "Únete a las empresas que ya delegaron su tecnología en nosotros.",
     "formTitle": "Déjanos un mensaje",
     "formName": "Nombre",
     "formEmail": "Email corporativo",

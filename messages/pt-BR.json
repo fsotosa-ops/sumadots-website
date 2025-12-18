@@ -1,65 +1,46 @@
 {
-  "Index": {
-    "title": "Bem-vindo à Sumadots",
-    "description": "Automação e IA para o seu negócio no Brasil."
-  },
-  "Navbar": {
-    "blog": "Blog",
-    "services": "Serviços",
-    "clients": "Clientes",
-    "contact": "Contato",
-    "schedule": "Agendar Call"
-  },
+  "Navbar": { "blog": "Blog", "services": "Serviços", "clients": "Clientes", "contact": "Contato", "schedule": "Agendar Call" },
   "Hero": {
-    "badge": "Uma nova era de automação no Brasil",
-    "title": "Escale seu negócio com",
-    "titleAccent": "Inteligência Artificial",
-    "description": "Transformamos processos manuais em fluxos de trabalho autônomos e eficientes para empresas modernas.",
+    "badge": "Seu parceiro tecnológico estratégico",
+    "title": "Escale seu negócio com um",
+    "titleAccent": "CTO On-Demand",
+    "description": "Você não precisa contratar uma equipe técnica cara. Somos seu departamento de TI e IA, focado em otimizar seus processos e reduzir custos desde o primeiro dia.",
     "ctaPrimary": "Começar agora",
     "ctaSecondary": "Ver serviços"
   },
   "Services": {
-    "automation": {
-      "title": "Agentes Autônomos",
-      "desc": "Implementamos bots inteligentes que gerenciam e-mails, agendas e tarefas repetitivas 24 horas por dia."
-    },
-    "analysis": {
-      "title": "Análise de Dados com IA",
-      "desc": "Transforme dados brutos em decisões estratégicas usando modelos de deep learning."
-    },
-    "optimization": {
-      "title": "Otimização",
-      "desc": "Eficiência máxima nos fluxos de trabalho."
-    },
-    "consulting": {
-      "title": "Consultoria Tech",
-      "desc": "Estratégia tecnológica sob medida para sua empresa."
-    }
+    "title": "Nossas Soluções",
+    "automation": { "title": "Agentes Autônomos", "desc": "Bots que gerenciam suas operações e clientes 24/7." },
+    "analysis": { "title": "Análise com IA", "desc": "Transformamos seus dados em decisões de negócio lucrativas." },
+    "optimization": { "title": "Otimização", "desc": "Eficiência máxima em cada etapa do seu fluxo." },
+    "consulting": { "title": "Consultoria Tech", "desc": "Direção técnica estratégica para donos de negócios." }
   },
-  "Clients": {
-    "title": "Empresas que confiam em nós"
+  "Comparison": {
+    "title": "Seu Parceiro",
+    "titleAccent": "Tecnológico",
+    "colCategory": "Categoria",
+    "colSumadots": "Com Sumadots (CTOaaS)",
+    "colYourPath": "Seu Próprio Caminho",
+    "row1": ["Tempo de implementação", "6-12 semanas com stack pronto", "6-18 meses construindo do zero"],
+    "row2": ["Direção Técnica", "CTO experiente incluso desde o dia 1", "Precisa recrutar ou aprender por erro"],
+    "row3": ["Equipe de Desenvolvimento", "Acesso imediato a especialistas em IA", "Alto custo e tempo buscando talentos"],
+    "row4": ["Investimento Inicial", "Taxa mensal fixa e controlada", "Altos custos variáveis e riscos ocultos"],
+    "row5": ["Risco de execução", "Baixo. Processos testados e escaláveis", "Alto. Incerteza e atrasos técnicos"]
   },
-  "Partners": {
-    "title": "Nossos Parceiros Estratégicos"
-  },
-  "Footer": {
-    "rights": "SUMADOTS. O FUTURO IMPULSIONADO POR IA."
-  },
-  "WhatsApp": {
-    "status": "Online",
-    "message": "Olá, eu sou o Pipe 👋. Se você tiver alguma dúvida, envie-me uma mensagem e com certeza verei como posso ajudá-lo.",
-    "button": "Abrir WhatsApp"
-  },
+  "Clients": { "title": "Empresas que confiam em nós" },
+  "Partners": { "title": "Nossos Parceiros Estratégicos" },
+  "Footer": { "rights": "SUMADOTS. O FUTURO MOVIDO POR IA." },
+  "WhatsApp": { "status": "Online", "message": "Olá, sou o Pipe 👋. Como posso ajudar?", "button": "Abrir WhatsApp" },
   "CTA": {
     "title": "Pronto para",
     "titleAccent": "Escalar?",
-    "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos e encontrar oportunidades de automação com IA.",
+    "description": "Reserve uma sessão de 15 min para diagnosticar seus processos.",
     "button": "Ver disponibilidade no Calendar",
-    "socialProof": "Junte-se às empresas que já automatizam conosco.",
-    "formTitle": "Deixe-nos uma mensagem",
+    "socialProof": "Junte-se às empresas que já delegaram sua tecnologia para nós.",
+    "formTitle": "Deixe sua mensagem",
     "formName": "Nome",
     "formEmail": "E-mail corporativo",
-    "formHelp": "Como podemos te ajudar?",
+    "formHelp": "Como podemos ajudar?",
     "formSubmit": "Enviar consulta",
     "formFooter": "Responderemos em menos de 24 horas."
   }
