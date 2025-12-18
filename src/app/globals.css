@@ -44,3 +44,22 @@
     -webkit-font-smoothing: antialiased;
   }
 }
+
+@layer base {
+  :root {
+    /* Modo Claro: Mayor definición de contorno */
+    --cta-card-bg: rgba(255, 255, 255, 0.85);
+    --cta-card-border: rgba(0, 0, 0, 0.08); /* Contorno más resaltado */
+    --cta-input-bg: rgba(0, 0, 0, 0.03);
+    /* Sombra con un poco más de fuerza para definir la silueta */
+    --cta-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
+  }
+
+  .dark {
+    /* Modo Oscuro: Se mantiene premium y sutil */
+    --cta-card-bg: rgba(255, 255, 255, 0.02);
+    --cta-card-border: rgba(255, 255, 255, 0.05);
+    --cta-input-bg: rgba(255, 255, 255, 0.02);
+    --cta-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
