@@ -50,5 +50,23 @@
     "name": "Sumadots | Socio Experto",
     "shortName": "Sumadots",
     "description": "Tu socio tecnológico estratégico para automatizar procesos."
+  },
+  "Terms": {
+    "title": "Términos de Servicio y Privacidad",
+    "lastUpdate": "Última actualización: 18 de diciembre, 2025",
+    "intro": "Al interactuar con Sumadots, usted acepta los siguientes términos que rigen nuestra relación comercial preliminar y el tratamiento de su información estratégica.",
+    "sec1Title": "1. Tratamiento de Datos Estratégicos",
+    "sec1Content": "Sumadots recolecta información corporativa (nombre, email, procesos) exclusivamente para fines de diagnóstico. No compartimos bases de datos con terceros ni utilizamos su información para fines distintos a la optimización de sus servicios solicitados.",
+    "sec2Title": "2. Propiedad Intelectual",
+    "sec2Content": "Todas las metodologías, arquitecturas de software y flujos de automatización expuestos o propuestos por Sumadots son propiedad intelectual protegida. Su divulgación a terceros sin consentimiento previo está estrictamente prohibida.",
+    "sec3Title": "3. Limitación de Responsabilidad",
+    "sec3Content": "Sumadots actúa como un facilitador tecnológico. Los resultados de eficiencia dependen de la veracidad de los datos entregados y de la infraestructura del cliente. No garantizamos resultados específicos sin un contrato de servicios (SLA) previo.",
+    "sec4Title": "4. Confidencialidad (NDA)",
+    "sec4Content": "Toda información marcada como sensible o confidencial compartida a través de este formulario será tratada bajo estrictos protocolos de seguridad técnica y profesional por nuestro equipo de consultoría.",
+    "sec5Title": "5. Almacenamiento y Seguridad",
+    "sec5Content": "Implementamos cifrado de grado industrial para el almacenamiento de contactos. Usted tiene derecho a solicitar la eliminación total de sus registros en cualquier momento mediante una solicitud formal.",
+    "sec6Title": "6. Jurisdicción y Modificaciones",
+    "sec6Content": "Estos términos se rigen por la legislación vigente en Chile. Sumadots se reserva el derecho de actualizar estas cláusulas para reflejar mejoras en nuestros estándares de ciberseguridad.",
+    "footerNote": "Para consultas legales detalladas, contacte a legal@sumadots.com"
   }
 }

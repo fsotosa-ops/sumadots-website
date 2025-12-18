@@ -56,5 +56,23 @@
     "name": "Sumadots | Expert Partner",
     "shortName": "Sumadots",
     "description": "Your strategic tech partner for process automation."
+  },
+  "Terms": {
+    "title": "Terms of Service & Privacy Policy",
+    "lastUpdate": "Last Updated: December 2025",
+    "intro": "By interacting with Sumadots, you accept the following terms governing our preliminary business relationship and the processing of your strategic information.",
+    "sec1Title": "1. Strategic Data Processing",
+    "sec1Content": "Sumadots collects corporate information (name, email, processes) exclusively for diagnostic purposes. We do not share databases with third parties nor use your information for purposes other than optimizing your requested services.",
+    "sec2Title": "2. Intellectual Property",
+    "sec2Content": "All methodologies, software architectures, and automation flows presented or proposed by Sumadots are protected intellectual property. Disclosure to third parties without prior written consent is strictly prohibited.",
+    "sec3Title": "3. Limitation of Liability",
+    "sec3Content": "Sumadots acts as a technological facilitator. Efficiency results depend on the accuracy of the data provided and the client's infrastructure. We do not guarantee specific results without a prior Service Level Agreement (SLA).",
+    "sec4Title": "4. Confidentiality (NDA)",
+    "sec4Content": "Any information marked as sensitive or confidential shared through this form will be treated under strict technical and professional security protocols by our consulting team.",
+    "sec5Title": "5. Storage and Security",
+    "sec5Content": "We implement industrial-grade encryption for contact storage. You have the right to request the total deletion of your records at any time through a formal request.",
+    "sec6Title": "6. Jurisdiction and Amendments",
+    "sec6Content": "These terms are governed by current legislation. Sumadots reserves the right to update these clauses to reflect improvements in our cybersecurity standards.",
+    "footerNote": "For detailed legal inquiries, please contact legal@sumadots.com"
   }
 }
