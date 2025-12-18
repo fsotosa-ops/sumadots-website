@@ -7,7 +7,8 @@
     "blog": "Blog",
     "services": "Serviços",
     "clients": "Clientes",
-    "contact": "Contato"
+    "contact": "Contato",
+    "schedule": "Agendar Call"
   },
   "Hero": {
     "badge": "Uma nova era de automação no Brasil",
@@ -48,5 +49,18 @@
     "status": "Online",
     "message": "Olá, eu sou o Pipe 👋. Se você tiver alguma dúvida, envie-me uma mensagem e com certeza verei como posso ajudá-lo.",
     "button": "Abrir WhatsApp"
+  },
+  "CTA": {
+    "title": "Pronto para",
+    "titleAccent": "Escalar?",
+    "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos e encontrar oportunidades de automação com IA.",
+    "button": "Ver disponibilidade no Calendar",
+    "socialProof": "Junte-se às empresas que já automatizam conosco.",
+    "formTitle": "Deixe-nos uma mensagem",
+    "formName": "Nome",
+    "formEmail": "E-mail corporativo",
+    "formHelp": "Como podemos te ajudar?",
+    "formSubmit": "Enviar consulta",
+    "formFooter": "Responderemos em menos de 24 horas."
   }
 }

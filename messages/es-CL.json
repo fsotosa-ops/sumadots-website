@@ -7,7 +7,8 @@
     "blog": "Blog",
     "services": "Servicios",
     "clients": "Clientes",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "schedule": "Agendar Call"
   },
   "Hero": {
     "badge": "Nueva era de automatización en Chile",
@@ -48,5 +49,18 @@
     "status": "En línea",
     "message": "Hola, soy Pipe 👋. Si tienes alguna consulta mándame un mensaje y de seguro veo cómo te puedo ayudar.",
     "button": "Abrir WhatsApp"
+  },
+  "CTA": {
+    "title": "¿Listo para",
+    "titleAccent": "Escalar?",
+    "description": "Reserva una sesión estratégica de 30 min para diagnosticar tus procesos y encontrar oportunidades de automatización con IA.",
+    "button": "Ver disponibilidad en Calendar",
+    "socialProof": "Únete a las empresas que ya automatizan con nosotros.",
+    "formTitle": "Déjanos un mensaje",
+    "formName": "Nombre",
+    "formEmail": "Email corporativo",
+    "formHelp": "¿Cómo podemos ayudarte?",
+    "formSubmit": "Enviar consulta",
+    "formFooter": "Te responderemos en menos de 24 horas."
   }
 }

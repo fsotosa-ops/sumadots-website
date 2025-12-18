@@ -5,60 +5,13 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/app/components/Navbar';
-import WhatsAppWidget from '@/app/components/WhatsAppWidget'; // Widget con diseño mockup y Roboto
+import WhatsAppWidget from '@/app/components/WhatsAppWidget';
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import "@/app/globals.css";
 
-// 1. Configuración de fuentes premium Geist
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// 2. SEO Regionalizado según el idioma seleccionado
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ locale: string }> 
-}): Promise<Metadata> {
-  const { locale } = await params;
-  
-  const titles: Record<string, string> = {
-    'es-CL': "Sumadots | IA y Automatización en Chile",
-    'en-US': "Sumadots | AI & Automation Solutions",
-    'pt-BR': "Sumadots | IA e Automação no Brasil"
-  };
-
-  const descriptions: Record<string, string> = {
-    'es-CL': "Optimizamos tus procesos con inteligencia artificial de vanguardia para escalar tu negocio.",
-    'en-US': "We optimize your business processes with cutting-edge AI technology to scale your business.",
-    'pt-BR': "Otimizamos seus processos de negócios com tecnologia de IA de ponta para expandir seus negócios."
-  };
-
-  return {
-    title: {
-      default: titles[locale] || titles['en-US'],
-      template: `%s | Sumadots`
-    },
-    description: descriptions[locale] || descriptions['en-US'],
-    metadataBase: new URL('https://www.sumadots.com'),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        'es-CL': '/es-CL',
-        'en-US': '/en-US',
-        'pt-BR': '/pt-BR',
-      },
-    },
-  };
-}
-
-// 3. Layout Maestro
 export default async function LocaleLayout({
   children,
   params
@@ -67,46 +20,21 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) notFound();
 
-  // Validación de seguridad para idiomas soportados
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
-  // Habilitar renderizado estático
   setRequestLocale(locale);
-
-  // Cargar diccionarios JSON correspondientes
   const messages = await getMessages();
 
   return (
-    // suppressHydrationWarning es necesario para el cambio de tema de next-themes
     <html lang={locale} suppressHydrationWarning className="scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-blue-500/30`}>
-        {/* Provider para cambio de modo Claro/Oscuro */}
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/* IMPORTANTE: NextIntlClientProvider debe envolver a cualquier componente 
-              que use 'useTranslations' para evitar errores de contexto.
-          */}
-          <NextIntlClientProvider messages={messages}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          {/* CORRECCIÓN: Se añade el prop locale aquí */}
+          <NextIntlClientProvider messages={messages} locale={locale}>
             <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300">
               <Navbar />
-              
-              <main className="flex-grow">
-                {children}
-              </main>
-
-              {/* Widget de contacto persistente (WhatsApp de Pipe). 
-                  Se coloca aquí para que no desaparezca al navegar entre páginas.
-              */}
+              <main className="flex-grow">{children}</main>
               <WhatsAppWidget />
-
-              {/* Footer con traducciones dinámicas */}
               <FooterSection />
             </div>
           </NextIntlClientProvider>
@@ -116,7 +44,6 @@ export default async function LocaleLayout({
   );
 }
 
-// Sub-componente para manejar las traducciones del Footer dentro de la jerarquía del layout
 function FooterSection() {
   const t = useTranslations('Footer');
   return (

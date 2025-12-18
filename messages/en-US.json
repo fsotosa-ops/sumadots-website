@@ -7,7 +7,8 @@
     "blog": "Blog",
     "services": "Services",
     "clients": "Clients",
-    "contact": "Contact"
+    "contact": "Contact",
+    "schedule": "Schedule Call"
   },
   "Hero": {
     "badge": "A new era of automation",
@@ -48,5 +49,18 @@
     "status": "Online",
     "message": "Hi, I'm Pipe 👋. If you have any questions, send me a message and I'll see how I can help you.",
     "button": "Open WhatsApp"
+  },
+  "CTA": {
+    "title": "Ready to",
+    "titleAccent": "Scale?",
+    "description": "Book a 30-minute strategic session to diagnose your processes and find AI automation opportunities.",
+    "button": "See availability on Calendar",
+    "socialProof": "Join the companies that already automate with us.",
+    "formTitle": "Leave us a message",
+    "formName": "Name",
+    "formEmail": "Corporate Email",
+    "formHelp": "How can we help you?",
+    "formSubmit": "Send inquiry",
+    "formFooter": "We will respond in less than 24 hours."
   }
 }
