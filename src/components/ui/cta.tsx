@@ -9,10 +9,9 @@ export default function CTASection() {
   return (
     <section className="py-24 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* El grid mantiene las 2 columnas en desktop (lg) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          {/* BLOQUE DE TEXTO: Responsivo */}
+          {/* BLOQUE DE TEXTO */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -31,7 +30,6 @@ export default function CTASection() {
               </p>
             </motion.div>
 
-            {/* BOTÓN: Centrado en móvil, izquierda en desktop */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -44,20 +42,9 @@ export default function CTASection() {
                 {t('button')}
               </button>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-3 pt-4 border-l-2 border-blue-600/30 pl-4"
-            >
-              <p className="text-sm text-muted-foreground italic">
-                "{t('socialProof')}"
-              </p>
-            </motion.div>
           </div>
 
-          {/* FORMULARIO: Usando etiquetas HTML estándar */}
+          {/* FORMULARIO CON TyC */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -70,25 +57,40 @@ export default function CTASection() {
                 <input 
                   type="text"
                   placeholder={t('formName')} 
-                  className="w-full h-14 px-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground" 
+                  className="w-full h-14 px-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground placeholder:text-muted-foreground/50" 
                 />
                 <input 
                   type="email"
                   placeholder={t('formEmail')} 
-                  className="w-full h-14 px-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground" 
+                  className="w-full h-14 px-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground placeholder:text-muted-foreground/50" 
                 />
               </div>
               <textarea 
                 placeholder={t('formHelp')} 
-                className="w-full min-h-[150px] p-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground resize-none" 
+                className="w-full min-h-[120px] p-4 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600/50 transition-all text-foreground resize-none placeholder:text-muted-foreground/50" 
               />
+              
+              {/* --- CHECKBOX DE TÉRMINOS Y CONDICIONES --- */}
+              <div className="flex items-start gap-3 px-1">
+                <input 
+                  type="checkbox" 
+                  id="terms" 
+                  required
+                  className="mt-1 w-4 h-4 rounded border-white/10 bg-white/5 text-blue-600 focus:ring-blue-600/50" 
+                />
+                <label htmlFor="terms" className="text-xs text-muted-foreground leading-tight cursor-pointer">
+                  {t('formTerms')}{' '}
+                  <a href="/terms" className="text-blue-500 hover:underline transition-all">
+                    {/* Puedes crear una página sencilla de Términos después */}
+                    {t('formTermsLink')}
+                  </a>
+                </label>
+              </div>
+
               <button className="w-full h-14 text-lg font-bold rounded-xl bg-blue-600 hover:bg-blue-700 text-white transition-colors flex items-center justify-center">
                 <Send className="mr-2 w-5 h-5" />
                 {t('formSubmit')}
               </button>
-              <p className="text-center text-xs text-muted-foreground pt-2">
-                {t('formFooter')}
-              </p>
             </form>
           </motion.div>
 

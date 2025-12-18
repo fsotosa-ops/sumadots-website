@@ -48,7 +48,9 @@
     "formEmail": "Corporate Email",
     "formHelp": "How can we help you?",
     "formSubmit": "Send inquiry",
-    "formFooter": "We will respond in less than 24 hours."
+    "formFooter": "We will respond in less than 24 hours.",
+    "formTerms": "I accept the terms and the",
+    "formTermsLink": "Privacy Policy"
   },
   "Manifest": {
     "name": "Sumadots | Expert Partner",

@@ -42,7 +42,9 @@
     "formEmail": "Email corporativo",
     "formHelp": "¿Cómo podemos ayudarte?",
     "formSubmit": "Enviar consulta",
-    "formFooter": "Te responderemos en menos de 24 horas."
+    "formFooter": "Te responderemos en menos de 24 horas.",
+    "formTerms": "Acepto los términos y la",
+    "formTermsLink": "Política de Privacidad"
   },
   "Manifest": {
     "name": "Sumadots | Socio Experto",
