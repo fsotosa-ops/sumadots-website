@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { Bot, BarChart3, Zap, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function ServicesBento() {
   const t = useTranslations('Services');
@@ -20,6 +21,14 @@ export default function ServicesBento() {
   return (
     <div id="services-section" className="scroll-mt-24">
       <div className="flex flex-col items-center mb-16 text-center">
+        {/* ICONO DE MARCA COMO INDICADOR DE SECCIÓN */}
+        <Image 
+          src="/suma-icon.svg" 
+          alt="" 
+          width={32} 
+          height={32} 
+          className="mb-4 opacity-40 dark:invert"
+        />
         <motion.h2 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +71,7 @@ export default function ServicesBento() {
         </motion.div>
 
         <motion.div variants={item}>
-          <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-yellow-500 transition-all">
+          <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-yellow-500 transition-all group">
             <Zap className="w-7 h-7 text-yellow-600 mb-4" />
             <CardTitle className="text-lg mb-1">{t('optimization.title')}</CardTitle>
             <CardDescription className="text-sm">{t('optimization.desc')}</CardDescription>
@@ -70,7 +79,7 @@ export default function ServicesBento() {
         </motion.div>
 
         <motion.div variants={item}>
-          <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-purple-500 transition-all">
+          <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-purple-500 transition-all group">
             <Cpu className="w-7 h-7 text-purple-600 mb-4" />
             <CardTitle className="text-lg mb-1">{t('consulting.title')}</CardTitle>
             <CardDescription className="text-sm">{t('consulting.desc')}</CardDescription>

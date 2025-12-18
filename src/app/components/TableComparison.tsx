@@ -1,7 +1,8 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Check, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function TableComparison() {
   const t = useTranslations('Comparison');
@@ -33,7 +34,7 @@ export default function TableComparison() {
           <table className="w-full text-left border-collapse min-w-[800px]">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-8 text-zinc-500 text-xs tracking-widest font-bold w-1/4">{t('colCategory')}</th>
+                <th className="p-8 text-zinc-500 text-[11px] tracking-widest font-bold w-1/4">{t('colCategory')}</th>
                 <th className="p-8 bg-blue-600/15 text-blue-400 font-bold text-lg tracking-tight w-1/3">{t('colSumadots')}</th>
                 <th className="p-8 text-zinc-400 font-bold w-1/3">{t('colYourPath')}</th>
               </tr>
@@ -44,7 +45,14 @@ export default function TableComparison() {
                   <td className="p-8 font-bold text-foreground transition-transform group-hover:translate-x-1">{row.cat}</td>
                   <td className="p-8 bg-blue-600/5 text-foreground font-medium">
                     <div className="flex items-center gap-3">
-                      <Check className="text-blue-500 w-5 h-5 flex-shrink-0" />
+                      {/* ICONO DE MARCA COMO CHECK PERSONALIZADO */}
+                      <Image 
+                        src="/suma-icon.svg" 
+                        alt="Check" 
+                        width={20} 
+                        height={20} 
+                        className="dark:invert brightness-125"
+                      />
                       {row.suma}
                     </div>
                   </td>

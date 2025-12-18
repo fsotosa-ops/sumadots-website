@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Calendar, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 export default function CTA() {
   const t = useTranslations('CTA');
@@ -18,7 +19,10 @@ export default function CTA() {
 
   return (
     <section className="py-24 relative bg-background overflow-hidden" id="contact">
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none" />
+      {/* DECORACIÓN DE MARCA: Icono sutil detrás del contenido */}
+      <div className="absolute -bottom-20 -left-20 opacity-[0.03] dark:opacity-[0.05] pointer-events-none z-0 -rotate-12">
+        <Image src="/suma-icon.svg" alt="" width={500} height={500} className="dark:invert" />
+      </div>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div 
@@ -38,7 +42,7 @@ export default function CTA() {
           
           <Button 
             size="lg" 
-            className="h-16 px-8 rounded-2xl text-lg font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 text-white transition-all shadow-2xl shadow-indigo-500/20 mb-10 group border-none"
+            className="h-16 px-8 rounded-2xl text-lg font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 text-white transition-all shadow-2xl shadow-indigo-500/20 mb-10 group border-none cursor-pointer"
             onClick={() => window.open(calendarLink, '_blank')}
           >
             <Calendar className="mr-3 w-6 h-6 transition-transform group-hover:scale-110" />
@@ -50,6 +54,7 @@ export default function CTA() {
           </p>
         </motion.div>
 
+        {/* Lado Derecho: Formulario */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,6 +62,7 @@ export default function CTA() {
           className="bg-zinc-900/40 backdrop-blur-xl border border-white/5 p-8 md:p-10 rounded-[32px] shadow-2xl relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 opacity-40"></div>
+
           <h3 className="text-2xl font-bold mb-8 text-foreground tracking-tight">{t('formTitle')}</h3>
           <form className="space-y-6 relative z-10">
             <input required className={inputClasses} placeholder={t('formName')} />

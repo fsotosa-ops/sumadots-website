@@ -2,7 +2,8 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react"; // Sparkles vuelve a ser genérico
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -18,6 +19,11 @@ export default function Hero() {
     <section className="relative min-h-[95vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-background text-foreground transition-colors duration-500">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[700px] bg-blue-600/10 dark:bg-blue-600/15 rounded-[100%] blur-[120px] pointer-events-none z-0" />
       
+      {/* MARCA DE AGUA: Mantenemos este uso porque da profundidad sin interrumpir la lectura */}
+      <div className="absolute top-1/4 -right-20 opacity-[0.02] dark:opacity-[0.04] pointer-events-none z-0 rotate-12">
+        <Image src="/suma-icon.svg" alt="" width={600} height={600} className="dark:invert" />
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 import { Button } from "@/components/ui/button";
+import Image from 'next/image';
 
 export default function Navbar() {
   const t = useTranslations('Navbar');
@@ -11,8 +12,16 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b border-border bg-background/80 backdrop-blur-md">
-      <Link href="/" className="text-xl font-bold tracking-tighter text-foreground">
-        SUMADOTS
+      {/* LOGO AMPLIADO: Ajustado a h-16 (64px) para máxima visibilidad */}
+      <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
+        <Image 
+          src="/suma-dots-logo-header.svg" 
+          alt="Sumadots Logo" 
+          width={300} // Valor aumentado para soportar el renderizado más grande
+          height={64} // Altura base de 64px
+          className="h-16 w-auto dark:invert object-contain" 
+          priority
+        />
       </Link>
       
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
