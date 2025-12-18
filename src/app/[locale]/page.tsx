@@ -3,7 +3,7 @@ import Clients from '../components/Clients';
 import Partners from '../components/Partners';
 import ServicesBento from '../components/ServicesBento';
 import SectionWrapper from '../components/SectionWrapper';
-import Advantages from '../components/TableComparison';
+import TableComparison from '../components/TableComparison';
 import CTA from '@/components/ui/cta';
 
 export default function HomePage() {
@@ -14,8 +14,7 @@ export default function HomePage() {
       <SectionWrapper>
         <ServicesBento />
       </SectionWrapper>
-      {/* SECCIÓN DE VENTAJAS REFORZADA */}
-      <Advantages /> 
+      <TableComparison /> 
       <Partners />
       <CTA /> 
     </>

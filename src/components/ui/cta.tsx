@@ -18,12 +18,9 @@ export default function CTA() {
 
   return (
     <section className="py-24 relative bg-background overflow-hidden" id="contact">
-      {/* Glow de fondo para profundidad */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-        
-        {/* Lado Izquierdo: Sin cursivas y con gradiente correcto */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,20 +38,18 @@ export default function CTA() {
           
           <Button 
             size="lg" 
-            className="h-16 px-8 rounded-2xl text-lg font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 text-white transition-all shadow-2xl shadow-indigo-500/20 mb-10 group"
+            className="h-16 px-8 rounded-2xl text-lg font-bold bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 text-white transition-all shadow-2xl shadow-indigo-500/20 mb-10 group border-none"
             onClick={() => window.open(calendarLink, '_blank')}
           >
             <Calendar className="mr-3 w-6 h-6 transition-transform group-hover:scale-110" />
             {t('button')}
           </Button>
 
-          {/* Eliminada la cursiva del social proof */}
           <p className="text-sm text-muted-foreground font-medium pl-4 border-l-2 border-indigo-500/30">
             {t('socialProof')}
           </p>
         </motion.div>
 
-        {/* Lado Derecho: Formulario de Contacto */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,14 +57,13 @@ export default function CTA() {
           className="bg-zinc-900/40 backdrop-blur-xl border border-white/5 p-8 md:p-10 rounded-[32px] shadow-2xl relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 opacity-40"></div>
-
           <h3 className="text-2xl font-bold mb-8 text-foreground tracking-tight">{t('formTitle')}</h3>
           <form className="space-y-6 relative z-10">
             <input required className={inputClasses} placeholder={t('formName')} />
             <input required type="email" className={inputClasses} placeholder={t('formEmail')} />
             <textarea required className={cn(inputClasses, "h-32 resize-none")} placeholder={t('formHelp')} />
             
-            <Button className="w-full h-14 rounded-xl font-bold flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 transition-all shadow-lg shadow-indigo-500/20 group">
+            <Button className="w-full h-14 rounded-xl font-bold flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 transition-all shadow-lg shadow-indigo-500/20 group border-none">
               {t('formSubmit')} 
               <Send size={18} className="transition-transform group-hover:translate-x-1" />
             </Button>

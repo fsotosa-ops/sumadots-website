@@ -16,13 +16,12 @@ export default function Navbar() {
       </Link>
       
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-        <Link href="/#services" className="hover:text-foreground transition-colors">{t('services')}</Link>
+        <Link href="/#services-section" className="hover:text-foreground transition-colors">{t('services')}</Link>
         <Link href="/blog" className="hover:text-foreground transition-colors">{t('blog')}</Link>
         <Link href="/#contact" className="hover:text-foreground transition-colors">{t('contact')}</Link>
       </div>
 
       <div className="flex items-center gap-4">
-        {/* BOTÓN CON GRADIENTE DE MARCA */}
         <div className="hidden sm:block">
           <Button 
             className="rounded-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 hover:opacity-90 text-white font-bold px-6 h-9 text-[11px] uppercase tracking-wider transition-all shadow-lg shadow-indigo-500/20"

@@ -7,31 +7,31 @@
     "schedule": "Agendar Call"
   },
   "Hero": {
-    "badge": "Tu socio tecnológico estratégico",
-    "title": "Escala tu negocio con un",
-    "titleAccent": "CTO On-Demand",
-    "description": "No necesitas contratar un equipo técnico costoso. Somos tu departamento de tecnología e IA, enfocado en optimizar tus procesos y reducir tus costos operativos desde el primer día.",
+    "badge": "Tu socio tecnológico",
+    "title": "Haz crecer tu empresa con un",
+    "titleAccent": "Socio Experto",
+    "description": "Automatizamos tu operación y reducimos tus costos desde el primer mes. Somos el equipo técnico que tu empresa necesita para crecer.",
     "ctaPrimary": "Comenzar ahora",
     "ctaSecondary": "Ver servicios"
   },
   "Services": {
     "title": "Nuestras Soluciones",
-    "automation": { "title": "Agentes Autónomos", "desc": "Bots que gestionan tus operaciones y clientes 24/7." },
-    "analysis": { "title": "Análisis con IA", "desc": "Convertimos tus datos en decisiones de negocio rentables." },
-    "optimization": { "title": "Optimización", "desc": "Eficiencia máxima en cada paso de tu flujo de trabajo." },
-    "consulting": { "title": "Consultoría Tech", "desc": "Dirección técnica estratégica para dueños de negocio." }
+    "automation": { "title": "Asistentes 24/7", "desc": "Bots que gestionan tus operaciones y clientes sin interrupciones." },
+    "analysis": { "title": "Información al Instante", "desc": "Convertimos tus datos en reportes claros para tomar mejores decisiones." },
+    "optimization": { "title": "Procesos Rápidos", "desc": "Eliminamos los cuellos de botella para que tu negocio fluya más rápido." },
+    "consulting": { "title": "Asesoría Estratégica", "desc": "Te acompañamos a elegir la tecnología que realmente necesitas." }
   },
   "Comparison": {
-    "title": "Tu socio",
-    "titleAccent": "Tecnológico",
-    "colCategory": "Categoría",
-    "colSumadots": "Con Sumadots (CTOaaS)",
-    "colYourPath": "Tu propio camino",
-    "row1": ["Tiempo de implementación", "6-12 semanas con stack listo para usar", "6-18 meses construyendo desde cero"],
-    "row2": ["Dirección Técnica", "CTO experto incluido desde el día 1", "Necesitas reclutar o aprender por error"],
-    "row3": ["Equipo de Desarrollo", "Acceso instantáneo a especialistas en IA", "Alto costo y tiempo en búsqueda de talento"],
-    "row4": ["Inversión Inicial", "Fee mensual fijo y controlado", "Altos costos variables y riesgos ocultos"],
-    "row5": ["Riesgo de ejecución", "Bajo. Procesos probados y escalables", "Alto. Incertidumbre y retrasos técnicos"]
+    "title": "Tu camino al",
+    "titleAccent": "Éxito",
+    "colCategory": "Área",
+    "colSumadots": "Con un Socio Experto",
+    "colYourPath": "Intentarlo solo",
+    "row1": ["Puesta en marcha", "6-12 semanas con sistemas listos", "6-18 meses armando desde cero"],
+    "row2": ["Dirección", "Expertos liderando desde el día 1", "Aprendizaje lento basado en errores"],
+    "row3": ["Equipo", "Acceso inmediato a especialistas", "Alto costo de búsqueda y contratación"],
+    "row4": ["Gastos", "Inversión fija y sin sorpresas", "Costos variables y riesgos ocultos"],
+    "row5": ["Seguridad", "Procesos probados y escalables", "Fallas técnicas e incertidumbre"]
   },
   "Clients": { "title": "Empresas que confían en nosotros" },
   "Partners": { "title": "Nuestros Partners Estratégicos" },
@@ -39,10 +39,10 @@
   "WhatsApp": { "status": "En línea", "message": "Hola, soy Pipe 👋. ¿Cómo puedo ayudarte?", "button": "Abrir WhatsApp" },
   "CTA": {
     "title": "¿Listo para",
-    "titleAccent": "Escalar?",
-    "description": "Reserva una sesión estratégica de 15 min para diagnosticar tus procesos.",
+    "titleAccent": "Crecer?",
+    "description": "Reserva una sesión estratégica de 30 min para diagnosticar tus procesos.",
     "button": "Ver disponibilidad en Calendar",
-    "socialProof": "Únete a las empresas que ya delegaron su tecnología en nosotros.",
+    "socialProof": "Únete a las empresas que delegaron su tecnología en nosotros.",
     "formTitle": "Déjanos un mensaje",
     "formName": "Nombre",
     "formEmail": "Email corporativo",

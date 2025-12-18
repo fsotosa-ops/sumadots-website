@@ -1,42 +1,58 @@
 {
-  "Navbar": { "blog": "Blog", "services": "Serviços", "clients": "Clientes", "contact": "Contato", "schedule": "Agendar Call" },
+  "Navbar": {
+    "blog": "Blog",
+    "services": "Serviços",
+    "clients": "Clientes",
+    "contact": "Contato",
+    "schedule": "Agendar Call"
+  },
   "Hero": {
-    "badge": "Seu parceiro tecnológico estratégico",
-    "title": "Escale seu negócio com um",
-    "titleAccent": "CTO On-Demand",
-    "description": "Você não precisa contratar uma equipe técnica cara. Somos seu departamento de TI e IA, focado em otimizar seus processos e reduzir custos desde o primeiro dia.",
+    "badge": "Seu parceiro tecnológico",
+    "title": "Cresça sua empresa com um",
+    "titleAccent": "Parceiro Especialista",
+    "description": "Automatizamos sua operação e reduzimos seus custos desde o primeiro mês. Somos a equipe técnica que sua empresa precisa para crescer.",
     "ctaPrimary": "Começar agora",
     "ctaSecondary": "Ver serviços"
   },
   "Services": {
     "title": "Nossas Soluções",
-    "automation": { "title": "Agentes Autônomos", "desc": "Bots que gerenciam suas operações e clientes 24/7." },
-    "analysis": { "title": "Análise com IA", "desc": "Transformamos seus dados em decisões de negócio lucrativas." },
-    "optimization": { "title": "Otimização", "desc": "Eficiência máxima em cada etapa do seu fluxo." },
-    "consulting": { "title": "Consultoria Tech", "desc": "Direção técnica estratégica para donos de negócios." }
+    "automation": { "title": "Assistentes 24/7", "desc": "Bots que gerenciam suas operações e clientes sem interrupções." },
+    "analysis": { "title": "Informação Instantânea", "desc": "Transformamos seus dados em relatórios claros para melhores decisões." },
+    "optimization": { "title": "Processos Rápidos", "desc": "Eliminamos gargalos para que seu negócio flua mais rápido." },
+    "consulting": { "title": "Assessoria Estratégica", "desc": "Acompanhamos você na escolha da tecnologia que realmente precisa." }
   },
   "Comparison": {
-    "title": "Seu Parceiro",
-    "titleAccent": "Tecnológico",
-    "colCategory": "Categoria",
-    "colSumadots": "Com Sumadots (CTOaaS)",
-    "colYourPath": "Seu Próprio Caminho",
-    "row1": ["Tempo de implementação", "6-12 semanas com stack pronto", "6-18 meses construindo do zero"],
-    "row2": ["Direção Técnica", "CTO experiente incluso desde o dia 1", "Precisa recrutar ou aprender por erro"],
-    "row3": ["Equipe de Desenvolvimento", "Acesso imediato a especialistas em IA", "Alto custo e tempo buscando talentos"],
-    "row4": ["Investimento Inicial", "Taxa mensal fixa e controlada", "Altos custos variáveis e riscos ocultos"],
-    "row5": ["Risco de execução", "Baixo. Processos testados e escaláveis", "Alto. Incerteza e atrasos técnicos"]
+    "title": "Seu caminho para o",
+    "titleAccent": "Sucesso",
+    "colCategory": "Área",
+    "colSumadots": "Com um Parceiro Especialista",
+    "colYourPath": "Tentando sozinho",
+    "row1": ["Implementação", "6-12 semanas com sistemas prontos", "6-18 meses criando do zero"],
+    "row2": ["Direção", "Especialistas liderando desde o dia 1", "Aprendizado lento baseado em erros"],
+    "row3": ["Equipe", "Acesso imediato a especialistas", "Alto custo de busca e contratação"],
+    "row4": ["Gastos", "Investimento mensal fixo", "Custos variáveis e riscos imprevistos"],
+    "row5": ["Segurança", "Processos testados e escaláveis", "Falhas técnicas e incerteza"]
   },
-  "Clients": { "title": "Empresas que confiam em nós" },
-  "Partners": { "title": "Nossos Parceiros Estratégicos" },
-  "Footer": { "rights": "SUMADOTS. O FUTURO MOVIDO POR IA." },
-  "WhatsApp": { "status": "Online", "message": "Olá, sou o Pipe 👋. Como posso ajudar?", "button": "Abrir WhatsApp" },
+  "Clients": {
+    "title": "Empresas que confiam em nós"
+  },
+  "Partners": {
+    "title": "Nossos Parceiros Estratégicos"
+  },
+  "Footer": {
+    "rights": "SUMADOTS. O FUTURO MOVIDO POR IA."
+  },
+  "WhatsApp": {
+    "status": "Online",
+    "message": "Olá, sou o Pipe 👋. Mande uma mensagem e verei como ajudar.",
+    "button": "Abrir WhatsApp"
+  },
   "CTA": {
     "title": "Pronto para",
-    "titleAccent": "Escalar?",
-    "description": "Reserve uma sessão de 15 min para diagnosticar seus processos.",
+    "titleAccent": "Crescer?",
+    "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos.",
     "button": "Ver disponibilidade no Calendar",
-    "socialProof": "Junte-se às empresas que já delegaram sua tecnologia para nós.",
+    "socialProof": "Junte-se às empresas que delegaram sua tecnologia para nós.",
     "formTitle": "Deixe sua mensagem",
     "formName": "Nome",
     "formEmail": "E-mail corporativo",

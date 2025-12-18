@@ -19,13 +19,12 @@ export default function ServicesBento() {
 
   return (
     <div id="services-section" className="scroll-mt-24">
-      {/* TÍTULO NORMALIZADO */}
       <div className="flex flex-col items-center mb-16 text-center">
         <motion.h2 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4 uppercase"
+          className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4"
         >
           {t('title')}
         </motion.h2>
@@ -45,9 +44,7 @@ export default function ServicesBento() {
             <div className="relative z-10">
               <Bot className="w-12 h-12 text-blue-600 mb-6 group-hover:scale-110 transition-transform" />
               <CardTitle className="text-3xl font-bold mb-3">{t('automation.title')}</CardTitle>
-              <CardDescription className="text-muted-foreground text-lg leading-relaxed">
-                {t('automation.desc')}
-              </CardDescription>
+              <CardDescription className="text-muted-foreground text-lg leading-relaxed">{t('automation.desc')}</CardDescription>
             </div>
           </Card>
         </motion.div>
@@ -68,7 +65,7 @@ export default function ServicesBento() {
           <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-yellow-500 transition-all">
             <Zap className="w-7 h-7 text-yellow-600 mb-4" />
             <CardTitle className="text-lg mb-1">{t('optimization.title')}</CardTitle>
-            <CardDescription className="text-muted-foreground text-sm">{t('optimization.desc')}</CardDescription>
+            <CardDescription className="text-sm">{t('optimization.desc')}</CardDescription>
           </Card>
         </motion.div>
 
@@ -76,7 +73,7 @@ export default function ServicesBento() {
           <Card className="h-full relative overflow-hidden bg-card border-border p-6 hover:border-purple-500 transition-all">
             <Cpu className="w-7 h-7 text-purple-600 mb-4" />
             <CardTitle className="text-lg mb-1">{t('consulting.title')}</CardTitle>
-            <CardDescription className="text-muted-foreground text-sm">{t('consulting.desc')}</CardDescription>
+            <CardDescription className="text-sm">{t('consulting.desc')}</CardDescription>
           </Card>
         </motion.div>
       </motion.div>
