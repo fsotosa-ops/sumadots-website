@@ -1,11 +1,5 @@
 {
-  "Navbar": {
-    "blog": "Blog",
-    "services": "Servicios",
-    "clients": "Clientes",
-    "contact": "Contacto",
-    "schedule": "Agendar Call"
-  },
+  "Navbar": { "blog": "Blog", "services": "Servicios", "clients": "Clientes", "contact": "Contacto", "schedule": "Agendar Call" },
   "Hero": {
     "badge": "Tu socio tecnológico",
     "title": "Haz crecer tu empresa con un",
@@ -49,5 +43,10 @@
     "formHelp": "¿Cómo podemos ayudarte?",
     "formSubmit": "Enviar consulta",
     "formFooter": "Te responderemos en menos de 24 horas."
+  },
+  "Manifest": {
+    "name": "Sumadots | Socio Experto",
+    "shortName": "Sumadots",
+    "description": "Tu socio tecnológico estratégico para automatizar procesos."
   }
 }

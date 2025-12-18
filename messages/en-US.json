@@ -1,5 +1,11 @@
 {
-  "Navbar": { "blog": "Blog", "services": "Services", "clients": "Clients", "contact": "Contact", "schedule": "Schedule Call" },
+  "Navbar": {
+    "blog": "Blog",
+    "services": "Services",
+    "clients": "Clients",
+    "contact": "Contact",
+    "schedule": "Schedule Call"
+  },
   "Hero": {
     "badge": "Your tech partner",
     "title": "Grow your business with an",
@@ -43,5 +49,10 @@
     "formHelp": "How can we help you?",
     "formSubmit": "Send inquiry",
     "formFooter": "We will respond in less than 24 hours."
+  },
+  "Manifest": {
+    "name": "Sumadots | Expert Partner",
+    "shortName": "Sumadots",
+    "description": "Your strategic tech partner for process automation."
   }
 }

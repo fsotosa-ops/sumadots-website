@@ -10,9 +10,9 @@
     "badge": "Seu parceiro tecnológico",
     "title": "Cresça sua empresa com um",
     "titleAccent": "Parceiro Especialista",
-    "description": "Automatizamos sua operação e reduzimos seus custos desde o primeiro mês. Somos a equipe técnica que sua empresa precisa para crescer.",
+    "description": "Automatizamos sua operación e reduzimos custos desde o primeiro mês. Somos a equipe técnica que sua empresa precisa para crescer.",
     "ctaPrimary": "Começar agora",
-    "ctaSecondary": "Ver serviços"
+    "ctaSecondary": "Ver servicios"
   },
   "Services": {
     "title": "Nossas Soluções",
@@ -28,36 +28,31 @@
     "colSumadots": "Com um Parceiro Especialista",
     "colYourPath": "Tentando sozinho",
     "row1": ["Implementação", "6-12 semanas com sistemas prontos", "6-18 meses criando do zero"],
-    "row2": ["Direção", "Especialistas liderando desde o dia 1", "Aprendizado lento baseado em erros"],
-    "row3": ["Equipe", "Acesso imediato a especialistas", "Alto custo de busca e contratação"],
+    "row2": ["Direção", "Especialistas liderando desde o día 1", "Aprendizado lento baseado em erros"],
+    "row3": ["Equipe", "Acesso imediato a especialistas", "Alto custo de busca e contratación"],
     "row4": ["Gastos", "Investimento mensal fixo", "Custos variáveis e riscos imprevistos"],
     "row5": ["Segurança", "Processos testados e escaláveis", "Falhas técnicas e incerteza"]
   },
-  "Clients": {
-    "title": "Empresas que confiam em nós"
-  },
-  "Partners": {
-    "title": "Nossos Parceiros Estratégicos"
-  },
-  "Footer": {
-    "rights": "SUMADOTS. O FUTURO MOVIDO POR IA."
-  },
-  "WhatsApp": {
-    "status": "Online",
-    "message": "Olá, sou o Pipe 👋. Mande uma mensagem e verei como ajudar.",
-    "button": "Abrir WhatsApp"
-  },
+  "Clients": { "title": "Empresas que confiam en nós" },
+  "Partners": { "title": "Nossos Parceiros Estratégicos" },
+  "Footer": { "rights": "SUMADOTS. O FUTURO MOVIDO POR IA." },
+  "WhatsApp": { "status": "Online", "message": "Olá, sou o Pipe 👋. Mande uma mensagem e verei como ajudar.", "button": "Abrir WhatsApp" },
   "CTA": {
     "title": "Pronto para",
     "titleAccent": "Crescer?",
     "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos.",
     "button": "Ver disponibilidade no Calendar",
-    "socialProof": "Junte-se às empresas que delegaram sua tecnologia para nós.",
+    "socialProof": "Junte-se às empresas que delegaram sua tecnología para nós.",
     "formTitle": "Deixe sua mensagem",
     "formName": "Nome",
     "formEmail": "E-mail corporativo",
     "formHelp": "Como podemos ajudar?",
     "formSubmit": "Enviar consulta",
     "formFooter": "Responderemos em menos de 24 horas."
+  },
+  "Manifest": {
+    "name": "Sumadots | Parceiro Especialista",
+    "shortName": "Sumadots",
+    "description": "Seu parceiro tecnológico estratégico para automação de processos."
   }
 }
