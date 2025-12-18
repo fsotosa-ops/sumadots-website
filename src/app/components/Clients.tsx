@@ -36,15 +36,12 @@ export default function Clients() {
       logoDark: '/assets/clients/fsummer-darkmode.png',
       isDynamic: true,
       className: '',
-      // AJUSTE FINAL: Reducimos de 0.6 a 0.45 para que en Dark no se vea gigante
       scaleDark: 'scale-[0.45]', 
-      // Mantenemos la versión Light que ya validaste como perfecta
       scaleLight: 'scale-[2.5] translate-y-3'  
     }
   ];
 
   return (
-    // bg-background garantiza el negro puro #050505 del screenshot
     <section className="relative py-20 bg-background transition-colors duration-500 overflow-hidden" id="clients">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
@@ -57,7 +54,8 @@ export default function Clients() {
           >
             {t('title')}
           </motion.h2>
-          <div className="h-1 w-12 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.4)]" />
+          {/* LÍNEA CON GRADIENTE ACTUALIZADA */}
+          <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 md:gap-24 items-center justify-items-center">
@@ -80,9 +78,6 @@ export default function Clients() {
                 transition={{ delay: index * 0.1 }}
                 className="group relative flex items-center justify-center h-24 w-full cursor-pointer"
               >
-                {/* - Sin redimensionamiento en hover (fijo).
-                  - Efecto neón azul con drop-shadow al pasar el cursor.
-                */}
                 <div className={`relative w-full h-full transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.6)] ${currentScale}`}>
                   {currentLogo && (
                     <Image

@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { Bot, BarChart3, Zap, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from 'next/image';
 
 export default function ServicesBento() {
   const t = useTranslations('Services');
@@ -20,15 +19,8 @@ export default function ServicesBento() {
 
   return (
     <div id="services-section" className="scroll-mt-24">
+      {/* CABECERA LIMPIA CON LÍNEA GRADIENTE */}
       <div className="flex flex-col items-center mb-16 text-center">
-        {/* ICONO DE MARCA COMO INDICADOR DE SECCIÓN */}
-        <Image 
-          src="/suma-icon.svg" 
-          alt="" 
-          width={32} 
-          height={32} 
-          className="mb-4 opacity-40 dark:invert"
-        />
         <motion.h2 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +29,7 @@ export default function ServicesBento() {
         >
           {t('title')}
         </motion.h2>
-        <div className="h-1 w-12 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.4)]" />
+        <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
       </div>
 
       <motion.div 

@@ -27,7 +27,8 @@ export default function TableComparison() {
           >
             {t('title')} <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent px-1">{t('titleAccent')}</span>
           </motion.h2>
-          <div className="h-1 w-12 bg-blue-600 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.4)]" />
+          {/* LÍNEA CON GRADIENTE ACTUALIZADA */}
+          <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
         </div>
 
         <div className="overflow-x-auto rounded-[32px] border border-white/5 bg-zinc-900/10 backdrop-blur-md shadow-2xl">
@@ -51,7 +52,7 @@ export default function TableComparison() {
                         alt="Check" 
                         width={20} 
                         height={20} 
-                        className="dark:invert brightness-125"
+                        className="dark:invert brightness-125 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]"
                       />
                       {row.suma}
                     </div>
