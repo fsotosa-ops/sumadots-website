@@ -26,7 +26,7 @@ export default function Navbar() {
       
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
         <Link href="/#services-section" className="hover:text-foreground transition-colors">{t('services')}</Link>
-        <Link href="/blog" className="hover:text-foreground transition-colors">{t('blog')}</Link>
+        {/* <Link href="/blog" className="hover:text-foreground transition-colors">{t('blog')}</Link> */}
         <Link href="/#contact" className="hover:text-foreground transition-colors">{t('contact')}</Link>
       </div>
 
