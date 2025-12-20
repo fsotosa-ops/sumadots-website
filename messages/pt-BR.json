@@ -12,7 +12,7 @@
     "titleAccent": "Parceiro Especialista",
     "description": "Automatizamos sua operación e reduzimos custos desde o primeiro mês. Somos a equipe técnica que sua empresa precisa para crescer.",
     "ctaPrimary": "Começar agora",
-    "ctaSecondary": "Ver servicios"
+    "ctaSecondary": "Ver serviços"
   },
   "Services": {
     "title": "Nossas Soluções",
@@ -58,21 +58,21 @@
     "description": "Seu parceiro tecnológico estratégico para automação de processos."
   },
   "Terms": {
-    "title": "Termos de Serviço e Privacidade",
+    "title": "Política de Privacidade e Termos Legais",
     "lastUpdate": "Última atualização: Dezembro 2025",
-    "intro": "Ao interagir com a Sumadots, você aceita os seguintes termos que regem nossa relação comercial preliminar e o tratamento de suas informações estratégicas.",
-    "sec1Title": "1. Tratamento de Dados Estratégicos",
-    "sec1Content": "A Sumadots coleta informações corporativas (nome, e-mail, processos) exclusivamente para fins de diagnóstico. Não compartilhamos bancos de dados com terceiros nem utilizamos suas informações para fins diferentes da otimização dos serviços solicitados.",
-    "sec2Title": "2. Propriedade Intelectual",
-    "sec2Content": "Todas as metodologias, arquiteturas de software e fluxos de automação expostos ou propostos pela Sumadots são propriedade intelectual protegida. Sua divulgação a terceiros sem consentimento prévio é estritamente proibida.",
-    "sec3Title": "3. Limitação de Responsabilidade",
-    "sec3Content": "A Sumadots atua como um facilitador tecnológico. Os resultados de eficiência dependem da veracidade dos dados entregues e da infraestrutura do cliente. Não garantimos resultados específicos sem um contrato de serviços (SLA) prévio.",
-    "sec4Title": "4. Confidencialidade (NDA)",
-    "sec4Content": "Toda informação marcada como sensível ou confidencial compartilhada através deste formulário será tratada sob rigorosos protocolos de segurança técnica e profissional por nossa equipe de consultoria.",
-    "sec5Title": "5. Armazenamento e Segurança",
-    "sec5Content": "Implementamos criptografia de grau industrial para o armazenamento de contatos. Você tem o direito de solicitar a exclusão total de seus registros a qualquer momento mediante uma solicitação formal.",
-    "sec6Title": "6. Jurisdição e Modificações",
-    "sec6Content": "Estes termos são regidos pela legislação vigente. A Sumadots reserva-se o direito de atualizar estas cláusulas para refletir melhorias em nossos padrões de segurança cibernética.",
-    "footerNote": "Para dúvidas legais detalhadas, entre em contato com legal@sumadots.com"
+    "intro": "Em conformidade com a Lei Nº 19.628 (Chile) e o RGPD (UE 2016/679), a Sumadots define os termos de processamento de dados e privacidade para proteger as informações de seus usuários e parceiros comerciais.",
+    "sec1Title": "1. Responsável pelo Tratamento",
+    "sec1Content": "O responsável pelo tratamento dos dados é a Suma Dots SpA. Coletamos informações corporativas (Identificação, Contato, Dados Técnicos) exclusivamente para gestão da relação comercial, faturamento e otimização de serviços de automação.",
+    "sec2Title": "2. Legitimação e Transferência de Dados",
+    "sec2Content": "O processamento baseia-se no seu consentimento e na execução de serviços. Não vendemos seus dados. Compartilhamos informações estritamente necessárias com fornecedores de infraestrutura tecnológica (hospedagem, bancos de dados, segurança) que atuam como 'Operadores de Dados' sob padrões de segurança de nível empresarial. A lista atual de fornecedores está disponível mediante solicitação.",
+    "sec3Title": "3. Direitos do Usuário (ARCO + Portabilidade)",
+    "sec3Content": "Conforme a lei, você tem o direito de Acesso, Retificação, Cancelamento, Oposição, Portabilidade e Limitação do tratamento. Você pode exercer esses direitos gratuitamente escrevendo para legal@sumadots.com.",
+    "sec4Title": "4. Propriedade Intelectual e Confidencialidade",
+    "sec4Content": "Todas as propostas técnicas, arquiteturas de software e metodologias entregues pela Sumadots são propriedade intelectual protegida. Estabelece-se um acordo de confidencialidade (NDA) implícito sobre as informações sensíveis compartilhadas nas etapas de diagnóstico.",
+    "sec5Title": "5. Segurança e Retenção de Dados",
+    "sec5Content": "Implementamos criptografia SSL/TLS e protocolos de segurança perimetral. Os dados serão mantidos enquanto durar a relação comercial ou pelos anos necessários para cumprir obrigações legais tributárias.",
+    "sec6Title": "6. Jurisdição e Cookies",
+    "sec6Content": "Este site utiliza cookies técnicos para funcionamento. Para qualquer controvérsia legal, as partes submetem-se aos Tribunais Ordinários de Justiça de Santiago do Chile.",
+    "footerNote": "Para exercer seus direitos ou consultas de DPO: legal@sumadots.com"
   }
 }

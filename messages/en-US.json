@@ -58,21 +58,21 @@
     "description": "Your strategic tech partner for process automation."
   },
   "Terms": {
-    "title": "Terms of Service & Privacy Policy",
+    "title": "Privacy Policy & Legal Terms",
     "lastUpdate": "Last Updated: December 2025",
-    "intro": "By interacting with Sumadots, you accept the following terms governing our preliminary business relationship and the processing of your strategic information.",
-    "sec1Title": "1. Strategic Data Processing",
-    "sec1Content": "Sumadots collects corporate information (name, email, processes) exclusively for diagnostic purposes. We do not share databases with third parties nor use your information for purposes other than optimizing your requested services.",
-    "sec2Title": "2. Intellectual Property",
-    "sec2Content": "All methodologies, software architectures, and automation flows presented or proposed by Sumadots are protected intellectual property. Disclosure to third parties without prior written consent is strictly prohibited.",
-    "sec3Title": "3. Limitation of Liability",
-    "sec3Content": "Sumadots acts as a technological facilitator. Efficiency results depend on the accuracy of the data provided and the client's infrastructure. We do not guarantee specific results without a prior Service Level Agreement (SLA).",
-    "sec4Title": "4. Confidentiality (NDA)",
-    "sec4Content": "Any information marked as sensitive or confidential shared through this form will be treated under strict technical and professional security protocols by our consulting team.",
-    "sec5Title": "5. Storage and Security",
-    "sec5Content": "We implement industrial-grade encryption for contact storage. You have the right to request the total deletion of your records at any time through a formal request.",
-    "sec6Title": "6. Jurisdiction and Amendments",
-    "sec6Content": "These terms are governed by current legislation. Sumadots reserves the right to update these clauses to reflect improvements in our cybersecurity standards.",
-    "footerNote": "For detailed legal inquiries, please contact legal@sumadots.com"
+    "intro": "In compliance with Chilean Law No. 19.628 and the GDPR (EU 2016/679), Sumadots defines the data processing and privacy terms to protect the information of its users and business partners.",
+    "sec1Title": "1. Data Controller",
+    "sec1Content": "The data controller is Suma Dots SpA. We collect corporate information (Identity, Contact, Technical Data) exclusively for managing business relationships, billing, and optimizing automation services.",
+    "sec2Title": "2. Legitimation and Data Transfer",
+    "sec2Content": "Processing is based on your consent and service execution. We do not sell your data. We share strictly necessary information with technology infrastructure providers (hosting, databases, security) acting as 'Data Processors' under enterprise-grade security standards. The current list of providers is available upon request.",
+    "sec3Title": "3. User Rights (ARCO + Portability)",
+    "sec3Content": "Under current law, you have the right to Access, Rectification, Erasure, Opposition, Portability, and Restriction of processing. You may exercise these rights free of charge by contacting legal@sumadots.com.",
+    "sec4Title": "4. Intellectual Property & Confidentiality",
+    "sec4Content": "All technical proposals, software architectures, and methodologies delivered by Sumadots are protected intellectual property. An implicit Non-Disclosure Agreement (NDA) applies to sensitive information shared during diagnostic stages.",
+    "sec5Title": "5. Security & Data Retention",
+    "sec5Content": "We implement SSL/TLS encryption and perimeter security protocols. Data will be retained for the duration of the business relationship or as required to comply with legal tax obligations.",
+    "sec6Title": "6. Jurisdiction & Cookies",
+    "sec6Content": "This site uses technical cookies for operation. For any legal disputes, the parties submit to the Ordinary Courts of Justice of Santiago, Chile.",
+    "footerNote": "To exercise your rights or DPO inquiries: legal@sumadots.com"
   }
 }

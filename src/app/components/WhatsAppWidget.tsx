@@ -42,7 +42,7 @@ export default function WhatsAppWidget() {
     }
   }, [isOpen]);
 
-  const whatsappUrl = `https://wa.me/56972183201`;
+  const whatsappUrl = `https://wa.me/56994989722`;
 
   const handleToggle = () => {
     if (!isOpen) {

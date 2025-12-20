@@ -11,7 +11,8 @@ export default function CTASection() {
   const sections = [1, 2, 3, 4, 5, 6];
 
   return (
-    <section className="py-24 relative overflow-hidden bg-background">
+    // AJUSTE AQUÍ: Se agregó id="contact" y scroll-mt-20
+    <section id="contact" className="py-24 relative overflow-hidden bg-background scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
