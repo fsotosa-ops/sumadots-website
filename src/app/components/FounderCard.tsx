@@ -1,20 +1,18 @@
 'use client';
 import { useRef } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Quote, Linkedin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 export default function FoundersCarousel() {
   const t = useTranslations('Founders');
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Función de scroll dinámica (se adapta al ancho real de la tarjeta)
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { current } = scrollRef;
-      const cardWidth = current.offsetWidth; // Calcula el ancho exacto
+      const cardWidth = current.offsetWidth;
       const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
       current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
@@ -25,25 +23,24 @@ export default function FoundersCarousel() {
       id: 1,
       image: '/sumadots-founder.png', 
       key: 'founder1',
-      statusColor: 'bg-green-500'
+      linkedin: 'https://www.linkedin.com/in/fssantibanez/', // URL real aquí
     },
     {
       id: 2,
       image: '/strategist-associate-sumadots.png',
       key: 'founder2',
-      statusColor: 'bg-blue-500'
+      linkedin: 'https://www.linkedin.com/in/edmundo-spohr/', // URL real aquí
     }
   ];
 
   return (
-    // CAMBIO: Aumentado a max-w-xl (antes era max-w-md) para dar más aire horizontal
     <div className="relative w-full max-w-xl mx-auto">
       
       {/* Aura decorativa de fondo */}
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/30 via-blue-600/30 to-purple-600/30 rounded-[2.5rem] blur-2xl opacity-60 animate-pulse" />
 
       {/* Contenedor Principal */}
-      <div className="relative overflow-hidden rounded-[2.5rem] bg-zinc-900/80 backdrop-blur-3xl border border-white/10 shadow-2xl">
+      <div className="relative overflow-hidden rounded-[2.5rem] bg-zinc-900/90 backdrop-blur-3xl border border-white/10 shadow-2xl">
         
         {/* Scroll Container */}
         <div 
@@ -52,17 +49,16 @@ export default function FoundersCarousel() {
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {founders.map((founder) => (
-            // CAMBIO: padding interno (p-8 a p-10) y gap aumentado (gap-6 a gap-8)
             <div key={founder.id} className="min-w-full p-8 md:p-10 flex flex-col gap-8 snap-center transition-opacity duration-300">
               
               {/* Header: Foto y Nombre */}
               <div className="flex items-center gap-6">
-                <div className="relative w-20 h-20 md:w-24 md:h-24 shrink-0 overflow-hidden rounded-2xl border-2 border-white/10 shadow-lg">
+                <div className="relative w-20 h-20 md:w-24 md:h-24 shrink-0 overflow-hidden rounded-2xl border-2 border-white/10 shadow-lg group">
                   <Image 
                     src={founder.image} 
                     alt="Founder" 
                     fill 
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                     priority
                   />
                 </div>
@@ -84,17 +80,19 @@ export default function FoundersCarousel() {
                 </p>
               </div>
 
-              {/* Footer: Estado y Navegación */}
-              <div className="flex items-center justify-between mt-2">
-                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/30 border border-white/5">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${founder.statusColor}`}></span>
-                    <span className={`relative inline-flex rounded-full h-2.5 w-2.5 ${founder.statusColor}`}></span>
-                  </span>
-                  <span className="text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">
-                    {t(`${founder.key}.status`)}
-                  </span>
-                </div>
+              {/* Footer: LinkedIn (Estilo Sumadots) y Navegación */}
+              <div className="flex items-center justify-between mt-2 pt-2">
+                
+                {/* Botón LinkedIn con Look & Feel del sitio */}
+                <a 
+                  href={founder.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white font-bold text-[11px] uppercase tracking-wider shadow-lg shadow-indigo-500/20 hover:opacity-90 hover:scale-105 transition-all duration-300 group/btn"
+                >
+                  <Linkedin className="w-3.5 h-3.5 fill-current" />
+                  <span>Conectar</span>
+                </a>
 
                 {/* Controles de navegación */}
                 <div className="flex gap-2">
