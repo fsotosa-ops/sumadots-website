@@ -42,7 +42,7 @@
     "titleAccent": "Crescer?",
     "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos.",
     "button": "Ver disponibilidade no Calendar",
-    "socialProof": "Junte-se às empresas que delegaram sua tecnología para nós.",
+    "socialProof": "Junte-se às empresas que delegaram sua tecnologia para nós.",
     "formTitle": "Deixe sua mensagem",
     "formName": "Nome",
     "formEmail": "E-mail corporativo",
@@ -52,6 +52,26 @@
     "formFooter": "Responderemos em menos de 24 horas.",
     "formTerms": "Aceito os termos e a",
     "formTermsLink": "Política de Privacidade"
+  },
+  "Founders": {
+    "founder1": {
+      "name": "Pipe Soto",
+      "role": "FOUNDER & TECH STRATEGIST",
+      "quote": "Após escalar soluções para 100M+ usuários, desenho a arquitetura técnica que elimina seu teto de crescimento.",
+      "status": "Disponível"
+    },
+    "founder2": {
+      "name": "Ed Spohr",
+      "role": "STRATEGIC ASSOCIATE",
+      "quote": "Como associado expert em negócios, garanto que a potência técnica da Sumadots se traduza em adoção e retorno real.",
+      "status": "Em reunião"
+    }
+  },
+  "ReadyToGrow": {
+    "title": "Pronto para",
+    "titleAccent": "Crescer?",
+    "description": "Reserve uma sessão estratégica de 30 min para diagnosticar seus processos.",
+    "ctaButton": "Ver disponibilidade no Calendar"
   },
   "Manifest": {
     "name": "Sumadots | Parceiro Especialista",

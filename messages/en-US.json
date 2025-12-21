@@ -53,6 +53,26 @@
     "formTerms": "I accept the terms and the",
     "formTermsLink": "Privacy Policy"
   },
+  "Founders": {
+    "founder1": {
+      "name": "Pipe Soto",
+      "role": "FOUNDER & TECH STRATEGIST",
+      "quote": "After scaling solutions for 100M+ users, I design the technical architecture that removes your growth ceiling.",
+      "status": "Available"
+    },
+    "founder2": {
+      "name": "Ed Spohr",
+      "role": "STRATEGIC ASSOCIATE",
+      "quote": "As a business expert associate, I ensure Sumadots' technical power translates into adoption and real ROI.",
+      "status": "In a meeting"
+    }
+  },
+  "ReadyToGrow": {
+    "title": "Ready to",
+    "titleAccent": "Grow?",
+    "description": "Book a 30-minute strategic session to diagnose your processes.",
+    "ctaButton": "Check availability on Calendar"
+  },
   "Manifest": {
     "name": "Sumadots | Expert Partner",
     "shortName": "Sumadots",
