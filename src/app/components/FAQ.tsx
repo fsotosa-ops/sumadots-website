@@ -6,16 +6,31 @@ import { Plus, Minus } from 'lucide-react';
 
 export default function FAQ() {
   const t = useTranslations('FAQ');
-  // Controlamos qué pregunta está abierta (solo una a la vez)
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const questions = ['q1', 'q2', 'q3', 'q4','q5'];
+  const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+
+  const formatAnswer = (text: string) => {
+    const parts = text.split(/\*\*(.*?)\*\*/g);
+    
+    return parts.map((part, index) => {
+      if (index % 2 === 1) {
+        return (
+          // CAMBIO: Eliminado el gradiente. Ahora es blanco sólido y negrita.
+          // Se ve mucho más limpio y legible sobre el fondo oscuro.
+          <span key={index} className="font-bold text-white">
+            {part}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       <div className="max-w-3xl mx-auto px-6 relative z-10">
         
-        {/* Cabecera de la sección */}
         <div className="flex flex-col items-center mb-16 text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
@@ -28,7 +43,6 @@ export default function FAQ() {
           <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
         </div>
 
-        {/* Lista de Preguntas */}
         <div className="space-y-4">
           {questions.map((qKey, index) => {
             const isOpen = openIndex === index;
@@ -70,8 +84,9 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
+                      {/* Texto base más suave (muted-foreground) para que el resaltado destaque */}
                       <div className="px-6 pb-6 pt-0 text-muted-foreground leading-relaxed text-sm md:text-base border-t border-transparent">
-                        {t(`${qKey}.answer`)}
+                        {formatAnswer(t(`${qKey}.answer`))}
                       </div>
                     </motion.div>
                   )}
