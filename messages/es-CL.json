@@ -96,23 +96,23 @@
     "subtitle": "Resolvemos tus dudas",
     "q1": {
       "question": "¿Son una Software Factory? ¿Hacen aplicaciones?",
-      "answer": "La respuesta corta es sí, tenemos la capacidad técnica, pero nuestro enfoque es diferente. No buscamos solo entregar código y despedirnos, sino generar valor en el tiempo. Si tu crecimiento requiere una app, la desarrollamos bajo una mentalidad incremental (80/20): priorizamos el 20% del desarrollo que genera el 80% del impacto para escalar de forma eficiente."
+      "answer": "La respuesta corta es sí, pero nuestro enfoque es diferente. No buscamos solo entregar código, sino **generar valor en el tiempo**. Si tu crecimiento requiere una app, la desarrollamos bajo una **mentalidad incremental (80/20)**: priorizamos el 20% del desarrollo que genera el 80% del impacto para escalar de forma eficiente."
     },
     "q2": {
       "question": "No tengo equipo técnico, ¿puedo trabajar con ustedes?",
-      "answer": "Absolutamente. Esa es nuestra razón de ser. Nos convertimos en tu Socio Experto y actuamos como el equipo técnico que tu empresa necesita. Tú te encargas de la visión del negocio y nosotros de toda la implementación, código y arquitectura."
+      "answer": "Absolutamente. Nos convertimos en tu **Socio Experto** y actuamos como el equipo técnico que tu empresa necesita. Tú te encargas de la visión del negocio y nosotros de toda la **implementación, código y arquitectura**."
     },
     "q3": {
       "question": "¿Cuánto tiempo tarda la implementación?",
-      "answer": "A diferencia de los 6 a 18 meses que toma armar un equipo interno, nosotros trabajamos con sistemas listos. Generalmente, logramos poner en marcha las soluciones iniciales en un plazo de 6 a 12 semanas."
+      "answer": "A diferencia de los 6-18 meses que toma armar un equipo, nosotros trabajamos con **sistemas listos**. Generalmente, logramos poner en marcha las soluciones iniciales en un plazo de **6 a 12 semanas**."
     },
     "q4": {
       "question": "¿Los costos son fijos o variables?",
-      "answer": "Trabajamos con una inversión fija y sin sorpresas. A diferencia de contratar personal o desarrollos a medida donde los costos se disparan, con Sumadots sabes exactamente cuánto invertirás desde el día uno para escalar tu operación."
+      "answer": "Trabajamos con una **inversión fija y sin sorpresas**. A diferencia de contratar personal donde los costos se disparan, con Sumadots sabes exactamente cuánto invertirás desde el día uno para **escalar tu operación**."
     },
     "q5": {
       "question": "¿Entenderán mi negocio o solo escriben código?",
-      "answer": "Ese es nuestro mayor diferencial. En Sumadots unimos **Estrategia y Tecnología**. Mientras nuestro equipo técnico construye, nuestro asociado experto en negocios se asegura de alinear la arquitectura técnica con tu visión comercial, garantizando que la tecnología se traduzca en adopción real y retorno de inversión."
+      "answer": "Ese es nuestro mayor diferencial. En Sumadots unimos **Estrategia y Tecnología**. Nuestro asociado experto en negocios asegura que la arquitectura técnica se alinee con tu visión, garantizando **adopción real y retorno de inversión**."
     }
   }
 }

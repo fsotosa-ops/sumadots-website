@@ -102,23 +102,23 @@
     "subtitle": "Clearing your doubts",
     "q1": {
       "question": "Are you a Software Factory? Do you build apps?",
-      "answer": "The short answer is yes, we have the technical capability, but our approach is different. We don't just deliver code and leave; we aim to generate value over time. If your growth requires an app, we develop it with an incremental mindset (80/20): prioritizing the 20% of development that yields 80% of the impact to scale efficiently."
+      "answer": "The short answer is yes, but our approach is different. We don't just deliver code; we aim to **generate value over time**. If your growth requires an app, we develop it with an **incremental mindset (80/20)**: prioritizing the 20% of development that yields 80% of the impact."
     },
     "q2": {
       "question": "I don't have a tech team, can I work with you?",
-      "answer": "Absolutely. That's why we exist. We become your Expert Partner and act as the technical team your company needs. You handle the business vision, and we handle all the implementation, code, and architecture."
+      "answer": "Absolutely. We become your **Expert Partner** and act as the technical team your company needs. You handle the business vision, and we handle all the **implementation, code, and architecture**."
     },
     "q3": {
       "question": "How long does implementation take?",
-      "answer": "Unlike the 6 to 18 months it takes to build an in-house team, we work with ready-to-deploy systems. Generally, we get initial solutions up and running within 6 to 12 weeks."
+      "answer": "Unlike the 6-18 months it takes to build an in-house team, we work with **ready-to-deploy systems**. Generally, we get initial solutions up and running within **6 to 12 weeks**."
     },
     "q4": {
       "question": "Are costs fixed or variable?",
-      "answer": "We work with a fixed investment and no surprises. Unlike hiring staff or custom development where costs can skyrocket, with Sumadots you know exactly how much you'll invest from day one to scale your operation."
+      "answer": "We work with a **fixed investment and no surprises**. Unlike hiring staff where costs can skyrocket, with Sumadots you know exactly how much you'll invest from day one to **scale your operation**."
     },
     "q5": {
       "question": "Will you understand my business or just write code?",
-      "answer": "That is our main differentiator. At Sumadots, we bridge **Strategy and Technology**. While our tech team builds, our strategic business associate ensures the technical architecture aligns with your commercial vision, guaranteeing that technology translates into real adoption and ROI."
+      "answer": "That is our main differentiator. We bridge **Strategy and Technology**. Our strategic business associate ensures the technical architecture aligns with your vision, guaranteeing **real adoption and ROI**."
     }
   }
 }

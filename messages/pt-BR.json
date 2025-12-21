@@ -96,29 +96,29 @@
     "sec6Title": "6. Jurisdição e Cookies",
     "sec6Content": "Este site utiliza cookies técnicos para funcionamento. Para qualquer controvérsia legal, as partes submetem-se aos Tribunais Ordinários de Justiça de Santiago do Chile.",
     "footerNote": "Para exercer seus direitos ou consultas de DPO: legal@sumadots.com"
+  },
+  "FAQ": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tiramos suas dúvidas",
+    "q1": {
+      "question": "Vocês são uma Fábrica de Software? Fazem aplicativos?",
+      "answer": "A resposta curta é sim, mas nossa abordagem é diferente. Não queremos apenas entregar código, mas **gerar valor ao longo do tempo**. Se seu crescimento requer um app, nós o desenvolvemos com uma **mentalidade incremental (80/20)**: priorizamos o que gera impacto para escalar de forma eficiente."
+    },
+    "q2": {
+      "question": "Não tenho equipe técnica, posso trabalhar com vocês?",
+      "answer": "Absolutamente. Tornamo-nos seu **Parceiro Especialista** e atuamos como a equipe técnica que sua empresa precisa. Você cuida da visão de negócios e nós cuidamos de toda a **implementação, código e arquitetura**."
+    },
+    "q3": {
+      "question": "Quanto tempo demora a implementação?",
+      "answer": "Diferente dos 6-18 meses para montar uma equipe, trabalhamos com **sistemas prontos**. Geralmente, colocamos as soluções iniciais em funcionamento num prazo de **6 a 12 semanas**."
+    },
+    "q4": {
+      "question": "Os custos são fixos ou variáveis?",
+      "answer": "Trabalhamos com um **investimento fixo e sem surpresas**. Diferente de contratar pessoal onde os custos disparam, com a Sumadots você sabe exatamente quanto investirá desde o primeiro dia para **escalar sua operação**."
+    },
+    "q5": {
+      "question": "Vocês entenderão meu negócio ou apenas escrevem código?",
+      "answer": "Esse é o nosso diferencial. Unimos **Estratégia e Tecnologia**. Nosso associado especialista em negócios garante que a técnica esteja alinhada com sua visão, assegurando **adoção real e retorno sobre o investimento**."
+    }
   }
-,"FAQ": {
-  "title": "Perguntas Frequentes",
-  "subtitle": "Tiramos suas dúvidas",
-  "q1": {
-    "question": "Vocês são uma Fábrica de Software? Fazem aplicativos?",
-    "answer": "A resposta curta é sim, temos a capacidade técnica, mas nossa abordagem é diferente. Não queremos apenas entregar código e ir embora, mas gerar valor ao longo do tempo. Se seu crescimento requer um app, nós o desenvolvemos com uma mentalidade incremental (80/20): priorizamos os 20% do desenvolvimento que geram 80% do impacto para escalar de forma eficiente."
-  },
-  "q2": {
-    "question": "Não tenho equipe técnica, posso trabalhar com vocês?",
-    "answer": "Absolutamente. Essa é a nossa razão de ser. Tornamo-nos seu Parceiro Especialista e atuamos como a equipe técnica que sua empresa precisa. Você cuida da visão de negócios e nós cuidamos de toda a implementação, código e arquitetura."
-  },
-  "q3": {
-    "question": "Quanto tempo demora a implementação?",
-    "answer": "Diferente dos 6 a 18 meses que leva para montar uma equipe interna, trabalhamos com sistemas prontos. Geralmente, colocamos as soluções iniciais em funcionamento num prazo de 6 a 12 semanas."
-  },
-  "q4": {
-    "question": "Os custos são fixos ou variáveis?",
-    "answer": "Trabalhamos com um investimento fixo e sem surpresas. Diferente de contratar pessoal ou desenvolvimentos sob medida onde os custos disparam, com a Sumadots você sabe exatamente quanto investirá desde o primeiro dia."
-  },
-  "q5": {
-    "question": "Vocês entenderão meu negócio ou apenas escrevem código?",
-    "answer": "Esse é o nosso principal diferencial. Na Sumadots unimos **Estratégia e Tecnologia**. Enquanto nossa equipe técnica constrói, nosso associado especialista em negócios garante que a arquitetura técnica esteja alinhada com sua visão comercial, assegurando que a tecnologia se traduza em adoção real e retorno sobre o investimento."
-  }
-}
 }
