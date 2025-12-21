@@ -23,13 +23,13 @@ export default function FoundersCarousel() {
       id: 1,
       image: '/sumadots-founder.png', 
       key: 'founder1',
-      linkedin: 'https://www.linkedin.com/in/fssantibanez/', // URL real aquí
+      linkedin: 'https://www.linkedin.com/in/fssantibanez/', // ⚠️ REEMPLAZAR con la URL real de Pipe
     },
     {
       id: 2,
       image: '/strategist-associate-sumadots.png',
       key: 'founder2',
-      linkedin: 'https://www.linkedin.com/in/edmundo-spohr/', // URL real aquí
+      linkedin: 'https://www.linkedin.com/in/edmundo-spohr/', // ⚠️ REEMPLAZAR con la URL real de Ed
     }
   ];
 
@@ -80,10 +80,10 @@ export default function FoundersCarousel() {
                 </p>
               </div>
 
-              {/* Footer: LinkedIn (Estilo Sumadots) y Navegación */}
+              {/* Footer: Botón LinkedIn y Navegación */}
               <div className="flex items-center justify-between mt-2 pt-2">
                 
-                {/* Botón LinkedIn con Look & Feel del sitio */}
+                {/* Botón LinkedIn con estilo de marca y traducción dinámica */}
                 <a 
                   href={founder.linkedin}
                   target="_blank"
@@ -91,7 +91,7 @@ export default function FoundersCarousel() {
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white font-bold text-[11px] uppercase tracking-wider shadow-lg shadow-indigo-500/20 hover:opacity-90 hover:scale-105 transition-all duration-300 group/btn"
                 >
                   <Linkedin className="w-3.5 h-3.5 fill-current" />
-                  <span>Conectar</span>
+                  <span>{t('connect')}</span>
                 </a>
 
                 {/* Controles de navegación */}
