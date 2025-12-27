@@ -57,7 +57,6 @@ export default function Partners() {
           >
             {t('title')}
           </motion.h2>
-          {/* LÍNEA CON GRADIENTE ACTUALIZADA */}
           <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
         </div>
 
@@ -78,11 +77,15 @@ export default function Partners() {
                 transition={{ delay: index * 0.1 }}
                 className="group relative flex items-center justify-center h-24 w-full"
               >
+                {/* El cambio ocurre SOLO en hover/interacción:
+                  - Por defecto: escala de grises y 50% opacidad.
+                  - Al interactuar (group-hover): se quita el gris, sube a 100% opacidad, crece un 10% y añade brillo azul.
+                */}
                 <Link 
                   href={partner.href} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="relative w-full h-full transition-all duration-500 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.8)]"
+                  className="relative w-full h-full transition-all duration-500 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.6)]"
                 >
                   {currentLogo && (
                     <Image
