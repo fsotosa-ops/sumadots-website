@@ -29,6 +29,7 @@
   },
   "Clients": { "title": "Empresas que confían en nosotros" },
   "Partners": { "title": "Nuestros Partners Estratégicos" },
+  "Networks": { "title": "Somos parte de la Red"},
   "Footer": { "rights": "SUMADOTS. EL FUTURO IMPULSADO POR IA." },
   "WhatsApp": { "status": "En línea", "message": "Hola, soy Pipe 👋. ¿Cómo puedo ayudarte?", "button": "Abrir WhatsApp" },
   "CTA": {
