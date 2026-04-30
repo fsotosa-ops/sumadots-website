@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Flywheel from './components/Flywheel';
