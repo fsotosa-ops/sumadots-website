@@ -1,26 +1,23 @@
 import Hero from '@/app/components/Hero';
-import Clients from '@/app/components/Clients';
-import Partners from '@/app/components/Partners';
 import ServicesBento from '@/app/components/ServicesBento';
-import SectionWrapper from '@/app/components/SectionWrapper';
-import TableComparison from '@/app/components/TableComparison';
-import ReadyToGrow from '@/app/components/ReadyToGrow';
-import ContactForm from '@/app/components/ContactForm';
+import ImpactProof from '@/app/components/ImpactProof';
+import TrinidadBridge from '@/app/components/TrinidadBridge';
+import Partners from '@/app/components/Partners';
 import FAQ from '@/app/components/FAQ';
+import FinalCTA from '@/app/components/FinalCTA';
 
 export default function HomePage() {
   return (
     <>
+      <div className="boutique-bg-grid" aria-hidden />
+      <div className="boutique-bg-vignette" aria-hidden />
       <Hero />
-      <Clients />
-      <SectionWrapper>
-        <ServicesBento />
-      </SectionWrapper>
-      <TableComparison /> 
+      <ServicesBento />
+      <ImpactProof />
+      <TrinidadBridge />
       <Partners />
-      <ReadyToGrow /> 
-      <ContactForm /> 
       <FAQ />
+      <FinalCTA />
     </>
   );
 }

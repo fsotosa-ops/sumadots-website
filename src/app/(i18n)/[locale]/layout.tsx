@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/app/components/Navbar';
 import WhatsAppWidget from '@/app/components/WhatsAppWidget';
+import Footer from '@/app/components/Footer';
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import Image from 'next/image';
 import "@/app/globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -66,29 +66,11 @@ export default async function LocaleLayout({
                 {children}
               </main>
               <WhatsAppWidget />
-              <FooterSection />
+              <Footer />
             </div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
-  );
-}
-
-function FooterSection() {
-  const t = useTranslations('Footer');
-  return (
-    <footer className="py-16 border-t border-border bg-muted/20 flex flex-col items-center gap-6">
-      <Image 
-        src="/suma-icon.svg" 
-        alt="Sumadots" 
-        width={40} 
-        height={40} 
-        className="opacity-50 dark:invert"
-      />
-      <p className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">
-        © {new Date().getFullYear()} {t('rights')}
-      </p>
-    </footer>
   );
 }

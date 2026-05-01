@@ -1,25 +1,20 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
-import { cn } from "@/lib/utils";
+
+const QUESTIONS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'] as const;
 
 export default function FAQ() {
   const t = useTranslations('FAQ');
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const formatAnswer = (text: string) => {
     const parts = text.split(/\*\*(.*?)\*\*/g);
-    
     return parts.map((part, index) => {
       if (index % 2 === 1) {
         return (
-          // CORRECCIÓN: Usamos colores explícitos para Light/Dark
-          // Light: Indigo oscuro | Dark: Indigo brillante (Cyan/Morado)
-          <span key={index} className="font-bold text-indigo-600 dark:text-indigo-400">
+          <span key={index} className="font-semibold text-foreground">
             {part}
           </span>
         );
@@ -29,92 +24,84 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden transition-colors duration-500">
-      <div className="max-w-3xl mx-auto px-6 relative z-10">
-        
-        {/* Cabecera */}
-        <div className="flex flex-col items-center mb-16 text-center">
-          <motion.h2 
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4"
-          >
-            {t('title')}
-          </motion.h2>
-          <div className="h-1.5 w-16 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.3)]" />
+    <section
+      id="faq"
+      className="relative scroll-mt-24 py-24 md:py-32 px-6"
+    >
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-14 max-w-2xl mx-auto">
+          <div className="inline-flex mb-5">
+            <div className="eyebrow">
+              <span className="dot" />
+              <span>{t('eyebrow')}</span>
+            </div>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-5 leading-[1.1]">
+            <span className="text-foreground">{t('titleSoft')}</span>{' '}
+            <span className="text-foreground/55">{t('titleStrong')}</span>
+          </h2>
+          <p className="text-base md:text-lg text-foreground/65 font-light leading-relaxed">
+            {t('subtitle')}
+          </p>
         </div>
 
-        {/* Lista de Preguntas */}
-        <div className="space-y-5">
-          {questions.map((qKey, index) => {
+        <div className="border-t border-[color:var(--hairline)]">
+          {QUESTIONS.map((qKey, index) => {
             const isOpen = openIndex === index;
-
             return (
-              <motion.div
+              <div
                 key={qKey}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                // ESTRATEGIA DEFINITIVA: Usar variables CSS del ContactForm
-                // Eliminamos bg-white/bg-zinc de las clases para que mande la variable
-                style={{ 
-                  backgroundColor: 'var(--cta-card-bg)', 
-                  borderColor: isOpen ? 'rgba(99, 102, 241, 0.5)' : 'var(--cta-card-border)', // Borde Indigo si abierto
-                  boxShadow: isOpen ? 'var(--cta-shadow)' : 'none'
-                }}
-                className={cn(
-                  "group relative rounded-[2.5rem] border overflow-hidden transition-all duration-500",
-                  "backdrop-blur-3xl", // Efecto cristal
-                  !isOpen && "hover:border-black/10 dark:hover:border-white/10"
-                )}
+                className="border-b border-[color:var(--hairline)]"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="flex items-center justify-between w-full p-6 md:p-8 text-left cursor-pointer select-none outline-none"
+                  className="flex items-center justify-between w-full py-6 md:py-7 text-left cursor-pointer select-none outline-none group"
+                  aria-expanded={isOpen}
                 >
-                  <span className={cn(
-                    "text-lg md:text-xl font-medium pr-8 transition-all duration-300",
-                    isOpen 
-                      // Titulo con Gradiente cuando está abierto
-                      ? "bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent font-bold" 
-                      : "text-foreground group-hover:opacity-80"
-                  )}>
-                    {t(`${qKey}.question`)}
-                  </span>
-                  
-                  <span className={cn(
-                    "shrink-0 p-2 rounded-full transition-all duration-500 border flex items-center justify-center",
-                    isOpen 
-                      // Botón con Gradiente
-                      ? "bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 border-transparent text-white rotate-180 shadow-md" 
-                      : "border-black/10 text-muted-foreground group-hover:border-black/20 group-hover:text-foreground dark:border-white/10 dark:group-hover:border-white/20"
-                  )}>
-                    {isOpen ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
+                  <div className="flex items-start gap-4 flex-1 pr-4">
+                    <span className="font-mono text-[11px] tracking-[0.22em] text-foreground/45 mt-[7px] flex-shrink-0">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <span className="text-base md:text-lg font-medium text-foreground leading-snug">
+                      {t(`${qKey}.question`)}
+                    </span>
+                  </div>
+                  <span
+                    className="shrink-0 w-9 h-9 rounded-full border border-[color:var(--hairline-strong)] flex items-center justify-center text-foreground/70 group-hover:border-[color:var(--accent-brand)] group-hover:text-foreground transition-all duration-200"
+                    style={{
+                      background: isOpen
+                        ? 'color-mix(in srgb, var(--accent-brand) 12%, transparent)'
+                        : 'transparent',
+                      borderColor: isOpen
+                        ? 'color-mix(in srgb, var(--accent-brand) 50%, transparent)'
+                        : undefined,
+                      color: isOpen ? 'var(--accent-brand-light)' : undefined,
+                    }}
+                  >
+                    {isOpen ? (
+                      <Minus className="w-4 h-4" />
+                    ) : (
+                      <Plus className="w-4 h-4" />
+                    )}
                   </span>
                 </button>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
-                    >
-                      {/* Texto de respuesta: text-muted-foreground se adapta solo al tema */}
-                      <div className="px-6 md:px-8 pb-8 pt-0 text-base md:text-lg leading-relaxed border-t border-transparent text-muted-foreground">
-                        {formatAnswer(t(`${qKey}.answer`))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                <div
+                  className="grid transition-all duration-400 ease-out"
+                  style={{
+                    gridTemplateRows: isOpen ? '1fr' : '0fr',
+                  }}
+                >
+                  <div className="overflow-hidden">
+                    <div className="pl-12 pr-12 pb-7 text-[15px] md:text-base leading-relaxed text-foreground/70 font-light">
+                      {formatAnswer(t(`${qKey}.answer`))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );

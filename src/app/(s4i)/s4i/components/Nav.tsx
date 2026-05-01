@@ -27,6 +27,14 @@ export default function Nav() {
           <a href="#founders" className="nav-link">
             Quiénes somos
           </a>
+          <a
+            href="/"
+            className="nav-link inline-flex items-center gap-1"
+            aria-label="Ir a Sumadots"
+          >
+            Sumadots
+            <span className="text-white/30">↗</span>
+          </a>
           <a href="#agenda" className="nav-cta">
             Iniciar conversación
             <span className="arrow">→</span>

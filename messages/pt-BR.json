@@ -2,24 +2,58 @@
   "Navbar": {
     "blog": "Blog",
     "services": "Serviços",
+    "impact": "Impacto",
     "clients": "Clientes",
     "contact": "Contato",
     "schedule": "Agendar Call"
   },
   "Hero": {
-    "badge": "Seu parceiro tecnológico",
-    "title": "Cresça sua empresa com um",
-    "titleAccent": "Parceiro Especialista",
-    "description": "Automatizamos sua operação e reduzimos custos desde o primeiro mês. Somos a equipe técnica que sua empresa precisa para crescer.",
-    "ctaPrimary": "Começar agora",
-    "ctaSecondary": "Ver serviços"
+    "eyebrow": "Infraestrutura para o escalonamento",
+    "titleLine1": "Construímos a infraestrutura tecnológica",
+    "titleLine2": "que sustenta seu crescimento.",
+    "description": "Automatizamos sua operação para que você deixe de ser o gargalo da sua própria empresa. Execução técnica de alto nível liderada por Founders.",
+    "ctaPrimary": "Agendar Diagnóstico Operacional",
+    "ctaSecondary": "Ver Casos de Impacto",
+    "microCta": "Sessão 30 min · Sem compromisso · 1:1 com um Founder"
   },
   "Services": {
-    "title": "Nossas Soluções",
-    "automation": { "title": "Assistentes 24/7", "desc": "Bots que gerenciam suas operações e clientes sem interrupções." },
-    "analysis": { "title": "Informação Instantânea", "desc": "Transformamos seus dados em relatórios claros para melhores decisões." },
-    "optimization": { "title": "Processos Rápidos", "desc": "Eliminamos gargalos para que seu negócio flua mais rápido." },
-    "consulting": { "title": "Assessoria Estratégica", "desc": "Acompanhamos você na escolha da tecnologia que realmente precisa." }
+    "eyebrow": "Capacidades",
+    "titleSoft": "Três frentes.",
+    "titleStrong": "Uma mesma execução.",
+    "description": "O que sustenta sua operação quando você para de improvisar e começa a escalar.",
+    "infrastructure": {
+      "title": "Infraestrutura e Automação",
+      "description": "Substituímos planilhas desconectadas e processos manuais por sistemas que operam sozinhos.",
+      "capabilities": [
+        "Assistentes 24/7 e integrações API",
+        "Backoffice operacional sob medida",
+        "Workflows automáticos end-to-end",
+        "Migração de stack legado"
+      ],
+      "cta": "Agendar diagnóstico"
+    },
+    "product": {
+      "title": "Desenvolvimento de Produto Escalável",
+      "description": "Construímos produto voltado ao cliente com arquitetura cloud pronta para escalar desde o dia um.",
+      "capabilities": [
+        "MVPs funcionais em 6-12 semanas",
+        "Arquitetura cloud pronta para escalar",
+        "Sprints fixos de 2 semanas",
+        "Handoff técnico documentado"
+      ],
+      "cta": "Agendar diagnóstico"
+    },
+    "intelligence": {
+      "title": "Data & IA Aplicada",
+      "description": "Camada de inteligência sobre sua operação. Métricas ao vivo, agentes IA e modelos sob medida.",
+      "capabilities": [
+        "Dashboards e inteligência de dados",
+        "Agentes IA e motores LLM custom",
+        "Pipelines de dados e eventos",
+        "Relatórios executivos automáticos"
+      ],
+      "cta": "Agendar diagnóstico"
+    }
   },
   "Comparison": {
     "title": "Seu caminho para o",
@@ -34,9 +68,55 @@
     "row5": ["Segurança", "Processos testados e escaláveis", "Falhas técnicas e incerteza"]
   },
   "Clients": { "title": "Empresas que confiam en nós" },
-  "Partners": { "title": "Nossos Parceiros Estratégicos" },
+  "ImpactProof": {
+    "eyebrow": "Impacto validado · S4i",
+    "titleSoft": "Se conseguimos lidar com a complexidade de uma vertical social,",
+    "titleStrong": "podemos sustentar qualquer escala corporativa.",
+    "description": "S4i é nossa vertical de impacto. A mesma engenharia que aplicamos a uma empresa, exigida pelo rigor de fundações e fundos públicos.",
+    "stat1Label": "USD captados",
+    "stat2Label": "Aceleração operacional",
+    "stat3Label": "Aumento ticket base",
+    "stat4Label": "Aumento ticket novo",
+    "validatedBadge": "Impacto validado",
+    "quote1": "A S4i foi chave na transformação dos nossos processos internos, gerando aprendizado para nossa organização e stakeholders. Sua abordagem nos permite profissionalizar nosso trabalho.",
+    "quote1Name": "Karen Sarabia",
+    "quote1Role": "Coordenadora de Transformação · América Solidaria",
+    "quote2": "A engenharia da Sumadots for Impact nos permitiu levar nossa gestão de dados a um nível de rigor corporativo. É o aliado técnico que as fundações precisam para escalar seu propósito.",
+    "quote2Name": "Emanuel Pacheco",
+    "quote2Role": "Diretor Executivo · Fundação Summer",
+    "seeMore": "Ver vertical S4i completa"
+  },
+  "Trinidad": {
+    "eyebrow": "Aliança estratégica · Trinidad",
+    "titleSoft": "Além da execução:",
+    "titleStrong": "Direção fracionária.",
+    "description": "Procurando direção estratégica além da execução técnica? Conheça Trinidad: aliança de C-Levels fracionários (CMO + CPO + CTO) para escalar seu negócio ao Modelo Board.",
+    "cta": "Conhecer Trinidad",
+    "contrastTag": "Como se complementam",
+    "contrastSumadots": "Braço executor tecnológico. Software factory + automação.",
+    "contrastTrinidad": "Cabeça estratégica fracionária. Marketing, produto e tecnologia C-Level."
+  },
+  "Partners": {
+    "eyebrow": "Network",
+    "titleSoft": "A rede que respalda",
+    "titleStrong": "cada sprint que executamos.",
+    "description": "Aliados estratégicos e comunidades que validam nosso padrão de execução."
+  },
   "Networks": { "title": "Fazemos parte da Rede" },
-  "Footer": { "rights": "SUMADOTS. O FUTURO MOVIDO POR IA." },
+  "Footer": {
+    "tagline": "Braço executor tecnológico. Construímos a infraestrutura que sustenta seu crescimento.",
+    "siteHeading": "Site",
+    "linkServices": "Serviços",
+    "linkImpact": "Impacto · S4i",
+    "linkTrinidad": "Trinidad",
+    "legalHeading": "Legal",
+    "linkTerms": "Termos",
+    "linkPrivacy": "Privacidade",
+    "contactHeading": "Contato",
+    "ctaSchedule": "Agendar 30 min",
+    "rights": "Todos os direitos reservados.",
+    "madeIn": "Feito no Chile · executado em LATAM"
+  },
   "WhatsApp": { "status": "Online", "message": "Olá, sou o Pipe 👋. Mande uma mensagem e verei como ajudar.", "button": "Abrir WhatsApp" },
   "CTA": {
     "title": "Pronto para",
@@ -99,26 +179,41 @@
     "footerNote": "Para exercer seus direitos ou consultas de DPO: legal@sumadots.com"
   },
   "FAQ": {
-    "title": "Perguntas Frequentes",
-    "subtitle": "Tiramos suas dúvidas",
+    "eyebrow": "Perguntas técnicas",
+    "titleSoft": "O que um CTO perguntaria",
+    "titleStrong": "antes de assinar.",
+    "subtitle": "As dúvidas reais que aparecem quando se avalia um parceiro técnico de infraestrutura.",
     "q1": {
-      "question": "Vocês são uma Fábrica de Software? Fazem aplicativos?",
-      "answer": "A resposta curta é sim, mas nossa abordagem é diferente. Não queremos apenas entregar código, mas **gerar valor ao longo do tempo**. Se seu crescimento requer um app, nós o desenvolvemos com uma **mentalidade incremental (80/20)**: priorizamos o que gera impacto para escalar de forma eficiente."
+      "question": "Quanto tempo demora para implementar a infraestrutura?",
+      "answer": "Operamos com **sistemas prontos** e sprints de 2 semanas. A primeira versão funcional é entregue entre **6 e 12 semanas**, dependendo do escopo. Em contraste com os 6-18 meses para montar uma equipe interna do zero."
     },
     "q2": {
-      "question": "Não tenho equipe técnica, posso trabalhar com vocês?",
-      "answer": "Absolutamente. Tornamo-nos seu **Parceiro Especialista** e atuamos como a equipe técnica que sua empresa precisa. Não cuidamos apenas da implementação, mas **acompanhamos o alinhamento estratégico com o tecnológico** para garantir que cada desenvolvimento impulsione sua visão de negócios."    },
+      "question": "De quem é a propriedade do código e qual stack usam?",
+      "answer": "**O código é 100% seu** — sem licenças amarradas, sem vendor lock-in. Trabalhamos sobre stack moderno (Next.js, TypeScript, Supabase/Postgres, Vercel/Firebase) com CI/CD documentado. Entregamos repos na sua organização GitHub e handoff técnico para que qualquer equipe sênior possa continuar."
+    },
     "q3": {
-      "question": "Quanto tempo demora a implementação?",
-      "answer": "Diferente dos 6-18 meses para montar uma equipe, trabalhamos com **sistemas prontos**. Geralmente, colocamos as soluções iniciais em funcionamento num prazo de **6 a 12 semanas**."
+      "question": "Como é o modelo de pricing?",
+      "answer": "Começamos com a **Sessão de Qualificação gratuita (30 min)**. Se houver match, segue um **Kick-off de USD 4.000** (Modelo A) que define escopo, arquitetura e primeiros sprints. Depois, sprints fixos mensais sem surpresas. Para empresas que precisam de direção estratégica além da execução existe Trinidad (Modelo Board)."
     },
     "q4": {
-      "question": "Os custos são fixos ou variáveis?",
-      "answer": "Trabalhamos com um **investimento fixo e sem surpresas**. Diferente de contratar pessoal onde os custos disparam, com a Sumadots você sabe exatamente quanto investirá desde o primeiro dia para **escalar sua operação**."
+      "question": "Como vocês lidam com segurança e propriedade de dados?",
+      "answer": "Criptografia SSL/TLS ponta a ponta, conformidade RGPD e Lei 19.628 (Chile). Hospedamos na **sua conta cloud** (não na nossa), com acesso auditado via IAM. NDA implícito desde a sessão de diagnóstico. Sem retenção de dados sensíveis fora do seu perímetro."
     },
     "q5": {
-      "question": "Vocês entenderão meu negócio ou apenas escrevem código?",
-      "answer": "Esse é o nosso diferencial. Unimos **Estratégia e Tecnologia**. Nosso associado especialista em negócios garante que a técnica esteja alinhada com sua visão, assegurando **adoção real e retorno sobre o investimento**."
+      "question": "Não tenho equipe técnica interna. Posso trabalhar com vocês mesmo assim?",
+      "answer": "Sim. Atuamos como **sua equipe técnica** enquanto você monta a sua. Documentamos cada decisão e entregamos **handoff técnico estruturado** para que quando você contratar seu CTO ou squad sênior, possam retomar sem fricção. Não queremos amarrar você: queremos que cresça."
+    },
+    "q6": {
+      "question": "Qual a diferença entre Sumadots e Trinidad?",
+      "answer": "**Sumadots** é o braço executor — software factory + automação. **Trinidad** é a cabeça estratégica — aliança de C-Levels fracionários (CMO + CPO + CTO). Sumadots executa o que Trinidad direciona. Trabalham juntas ou separadas conforme a operação precise."
     }
+  },
+  "FinalCTA": {
+    "eyebrow": "Próximo passo",
+    "titleSoft": "Uma sessão de 30 min pode revelar",
+    "titleStrong": "o gargalo exato da sua operação.",
+    "description": "Sem slides, sem pitch comercial. Apenas um diagnóstico operacional 1:1 com um Founder.",
+    "cta": "Agendar Diagnóstico Operacional",
+    "microCta": "Sessão 30 min · Sem compromisso · 1:1 com um Founder"
   }
 }

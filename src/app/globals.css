@@ -17,13 +17,311 @@
   --foreground: #050505;
   --border: #e5e7eb;
   --radius: 1rem;
+
+  /* Boutique tokens (mismo lenguaje que /s4i) */
+  --hairline: rgba(0, 0, 0, 0.08);
+  --hairline-strong: rgba(0, 0, 0, 0.16);
+  --text-secondary: rgba(0, 0, 0, 0.65);
+  --text-muted: rgba(0, 0, 0, 0.42);
+  --accent-brand: #7c3aed;
+  --accent-brand-light: #a78bfa;
+  --grid-line: rgba(0, 0, 0, 0.04);
+  --vignette-tint-1: rgba(124, 58, 237, 0.05);
+  --vignette-tint-2: rgba(167, 139, 250, 0.03);
+  --boutique-surface: rgba(0, 0, 0, 0.02);
+  --boutique-surface-hover: rgba(0, 0, 0, 0.04);
+  --cta-fill: #050505;
+  --cta-fill-text: #ffffff;
 }
 
 .dark {
-  /* Tema Oscuro */
-  --background: #050505;
+  /* Tema Oscuro (boutique baseline — mismo paleta que /s4i) */
+  --background: #030406;
   --foreground: #ffffff;
   --border: rgba(255, 255, 255, 0.08);
+
+  --hairline: rgba(255, 255, 255, 0.07);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.42);
+  --grid-line: rgba(255, 255, 255, 0.012);
+  --vignette-tint-1: rgba(124, 58, 237, 0.12);
+  --vignette-tint-2: rgba(167, 139, 250, 0.08);
+  --boutique-surface: rgba(255, 255, 255, 0.02);
+  --boutique-surface-hover: rgba(255, 255, 255, 0.05);
+  --cta-fill: #ffffff;
+  --cta-fill-text: #030406;
+}
+
+/* ─── BOUTIQUE BACKGROUND ──────────────────────────────────────── */
+.boutique-bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 80%);
+  pointer-events: none;
+}
+
+.boutique-bg-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 0%, var(--vignette-tint-1), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 50% 100%, var(--vignette-tint-2), transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── EYEBROW ─────────────────────────────────────────────────── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 7px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--boutique-surface);
+}
+.eyebrow .dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent-brand);
+  box-shadow: 0 0 8px var(--accent-brand);
+}
+
+/* ─── HAIRLINE ───────────────────────────────────────────────── */
+.hairline {
+  background: var(--hairline);
+  height: 1px;
+  width: 100%;
+}
+
+/* ─── BOUTIQUE CTAs ──────────────────────────────────────────── */
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 24px;
+  background: var(--cta-fill);
+  color: var(--cta-fill-text);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  border-radius: 999px;
+  border: 1px solid var(--cta-fill);
+  transition: all 240ms ease;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+  cursor: pointer;
+}
+.cta-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 36px -10px color-mix(in srgb, var(--cta-fill) 40%, transparent);
+}
+
+.cta-primary-sm {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  background: var(--cta-fill);
+  color: var(--cta-fill-text);
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: -0.005em;
+  border-radius: 999px;
+  border: 1px solid var(--cta-fill);
+  transition: all 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+.cta-primary-sm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--cta-fill) 35%, transparent);
+}
+.cta-primary-sm .arrow {
+  margin-left: 6px;
+  transition: transform 220ms ease;
+  display: inline-block;
+}
+.cta-primary-sm:hover .arrow { transform: translateX(2px); }
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 24px;
+  background: var(--boutique-surface);
+  color: var(--foreground);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  border-radius: 999px;
+  border: 1px solid var(--hairline-strong);
+  transition: all 240ms ease;
+  cursor: pointer;
+}
+.cta-secondary:hover {
+  background: var(--boutique-surface-hover);
+  border-color: var(--hairline-strong);
+  transform: translateY(-1px);
+}
+.cta-secondary .cta-arrow {
+  margin-left: 8px;
+  transition: transform 240ms ease;
+  display: inline-block;
+}
+.cta-secondary:hover .cta-arrow { transform: translateX(3px); }
+
+/* ─── REVEAL ANIMATIONS ──────────────────────────────────────── */
+@keyframes boutique-fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal { animation: boutique-fadeInUp 800ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.reveal-d1 { animation-delay: 80ms; }
+.reveal-d2 { animation-delay: 200ms; }
+.reveal-d3 { animation-delay: 340ms; }
+.reveal-d4 { animation-delay: 480ms; }
+
+/* ─── TRUST STRIP ────────────────────────────────────────────── */
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+@media (min-width: 768px) {
+  .trust-strip { grid-template-columns: repeat(4, 1fr); }
+}
+
+.trust-stat {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-right: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.trust-stat:nth-child(2n) { border-right: 0; }
+.trust-stat:nth-last-child(-n+2) { border-bottom: 0; }
+@media (min-width: 768px) {
+  .trust-stat { border-bottom: 0; }
+  .trust-stat:nth-child(2n) { border-right: 1px solid var(--hairline); }
+  .trust-stat:nth-child(4n) { border-right: 0; }
+}
+
+.trust-stat .num {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+.trust-stat .label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* ─── VALIDATED BADGE ────────────────────────────────────────── */
+.badge-validated {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-brand);
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--accent-brand) 30%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-brand) 8%, transparent);
+}
+.badge-validated::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-brand);
+  box-shadow: 0 0 8px var(--accent-brand);
+}
+
+/* ─── FLOATING WHATSAPP (mismo patrón que /s4i) ─────────────── */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 12px 28px -8px rgba(37, 211, 102, 0.5),
+    0 4px 12px -4px rgba(0, 0, 0, 0.4);
+  transition: all 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  animation: boutique-fadeInUp 600ms 1500ms both;
+}
+.floating-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 18px 36px -8px rgba(37, 211, 102, 0.6),
+    0 6px 16px -4px rgba(0, 0, 0, 0.5);
+}
+@keyframes whatsapp-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50%      { opacity: 1; transform: scale(1.04); }
+}
+.floating-whatsapp::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid rgba(37, 211, 102, 0.35);
+  animation: whatsapp-pulse 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .floating-whatsapp { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+}
+
+/* ─── CHIPS ──────────────────────────────────────────────────── */
+.capability-chip {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  background: var(--boutique-surface);
+  transition: all 240ms ease;
+  display: inline-block;
+}
+.capability-chip:hover {
+  border-color: var(--hairline-strong);
+  background: var(--boutique-surface-hover);
+  color: var(--foreground);
 }
 
 @layer base {

@@ -2,24 +2,58 @@
   "Navbar": {
     "blog": "Blog",
     "services": "Services",
+    "impact": "Impact",
     "clients": "Clients",
     "contact": "Contact",
     "schedule": "Schedule Call"
   },
   "Hero": {
-    "badge": "Your tech partner",
-    "title": "Grow your business with an",
-    "titleAccent": "Expert Partner",
-    "description": "We automate your operations and cut costs from month one. The dedicated tech team your business needs to scale.",
-    "ctaPrimary": "Get Started",
-    "ctaSecondary": "View Services"
+    "eyebrow": "Infrastructure for scaling",
+    "titleLine1": "We build the technical infrastructure",
+    "titleLine2": "that sustains your growth.",
+    "description": "We automate your operation so you stop being the bottleneck of your own company. Senior technical execution led by Founders.",
+    "ctaPrimary": "Schedule Operational Diagnostic",
+    "ctaSecondary": "See Impact Cases",
+    "microCta": "30 min · No commitment · 1:1 with a Founder"
   },
   "Services": {
-    "title": "Our Solutions",
-    "automation": { "title": "24/7 Assistants", "desc": "Bots that manage your operations and clients without interruptions." },
-    "analysis": { "title": "Instant Insight", "desc": "We turn your data into clear reports for better decision-making." },
-    "optimization": { "title": "Fast Processes", "desc": "We eliminate bottlenecks so your business flows faster." },
-    "consulting": { "title": "Strategic Advice", "desc": "We help you choose the technology you actually need." }
+    "eyebrow": "Capabilities",
+    "titleSoft": "Three fronts.",
+    "titleStrong": "One same execution.",
+    "description": "What holds your operation when you stop improvising and start scaling.",
+    "infrastructure": {
+      "title": "Infrastructure & Automation",
+      "description": "We replace disconnected sheets and manual processes with systems that run themselves.",
+      "capabilities": [
+        "24/7 assistants and API integrations",
+        "Custom-built operational backoffice",
+        "End-to-end automated workflows",
+        "Legacy stack migration"
+      ],
+      "cta": "Schedule diagnostic"
+    },
+    "product": {
+      "title": "Scalable Product Development",
+      "description": "We build client-facing products with cloud architecture ready to scale from day one.",
+      "capabilities": [
+        "Functional MVPs in 6-12 weeks",
+        "Cloud architecture ready to scale",
+        "Fixed two-week sprints",
+        "Documented technical handoff"
+      ],
+      "cta": "Schedule diagnostic"
+    },
+    "intelligence": {
+      "title": "Data & Applied AI",
+      "description": "An intelligence layer over your operation. Live metrics, AI agents and custom models.",
+      "capabilities": [
+        "Dashboards and data intelligence",
+        "AI agents and custom LLM engines",
+        "Data and event pipelines",
+        "Automated executive reports"
+      ],
+      "cta": "Schedule diagnostic"
+    }
   },
   "Comparison": {
     "title": "Your path to",
@@ -34,9 +68,55 @@
     "row5": ["Security", "Proven and scalable processes", "Uncertainty and technical failures"]
   },
   "Clients": { "title": "Companies that trust us" },
-  "Partners": { "title": "Our Strategic Partners" },
+  "ImpactProof": {
+    "eyebrow": "Validated impact · S4i",
+    "titleSoft": "If we can handle the complexity of a social vertical,",
+    "titleStrong": "we can sustain any corporate scale.",
+    "description": "S4i is our impact vertical. The same engineering we apply to companies, demanded by the rigor of foundations and public funding.",
+    "stat1Label": "USD raised",
+    "stat2Label": "Operational acceleration",
+    "stat3Label": "Base ticket lift",
+    "stat4Label": "New ticket lift",
+    "validatedBadge": "Validated impact",
+    "quote1": "S4i has been key in the transformation of our internal processes, generating learning for our organization and stakeholders. Their approach helps us professionalize our work.",
+    "quote1Name": "Karen Sarabia",
+    "quote1Role": "Transformation Coordinator · América Solidaria",
+    "quote2": "Sumadots for Impact's engineering has taken our data management to a corporate level of rigor. It's the technical ally foundations need to scale their purpose.",
+    "quote2Name": "Emanuel Pacheco",
+    "quote2Role": "Executive Director · Fundación Summer",
+    "seeMore": "See the full S4i vertical"
+  },
+  "Trinidad": {
+    "eyebrow": "Strategic alliance · Trinidad",
+    "titleSoft": "Beyond execution:",
+    "titleStrong": "Fractional direction.",
+    "description": "Looking for strategic direction in addition to technical execution? Meet Trinidad: an alliance of fractional C-Levels (CMO + CPO + CTO) to scale your business to the Board Model.",
+    "cta": "Discover Trinidad",
+    "contrastTag": "How they complement",
+    "contrastSumadots": "Technical execution arm. Software factory + automation.",
+    "contrastTrinidad": "Fractional strategic head. C-Level marketing, product and technology."
+  },
+  "Partners": {
+    "eyebrow": "Network",
+    "titleSoft": "The network behind",
+    "titleStrong": "every sprint we ship.",
+    "description": "Strategic allies and communities that validate our execution standard."
+  },
   "Networks": { "title": "We are part of the Network" },
-  "Footer": { "rights": "SUMADOTS. AI DRIVEN FUTURE." },
+  "Footer": {
+    "tagline": "Technical execution arm. We build the infrastructure that sustains your growth.",
+    "siteHeading": "Site",
+    "linkServices": "Services",
+    "linkImpact": "Impact · S4i",
+    "linkTrinidad": "Trinidad",
+    "legalHeading": "Legal",
+    "linkTerms": "Terms",
+    "linkPrivacy": "Privacy",
+    "contactHeading": "Contact",
+    "ctaSchedule": "Book 30 min",
+    "rights": "All rights reserved.",
+    "madeIn": "Built in Chile · shipped across LATAM"
+  },
   "WhatsApp": { "status": "Online", "message": "Hi, I'm Pipe 👋. Message me and I'll see how I can help you.", "button": "Open WhatsApp" },
   "CTA": {
     "title": "Ready to",
@@ -99,26 +179,41 @@
     "footerNote": "To exercise your rights or DPO inquiries: legal@sumadots.com"
   },
   "FAQ": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Clearing your doubts",
+    "eyebrow": "Technical questions",
+    "titleSoft": "What a CTO would ask",
+    "titleStrong": "before signing.",
+    "subtitle": "The real doubts that come up when evaluating a technical infrastructure partner.",
     "q1": {
-      "question": "Are you a Software Factory? Do you build apps?",
-      "answer": "The short answer is yes, but our approach is different. We don't just deliver code; we aim to **generate value over time**. If your growth requires an app, we develop it with an **incremental mindset (80/20)**: prioritizing the 20% of development that yields 80% of the impact."
+      "question": "How long does it take to implement the infrastructure?",
+      "answer": "We operate with **ready-to-deploy systems** and 2-week sprints. The first functional version ships between **6 and 12 weeks**, depending on scope. That contrasts with the 6-18 months needed to build an in-house team from scratch."
     },
     "q2": {
-      "question": "I don't have a tech team, can I work with you?",
-      "answer": "Absolutely. We become your **Expert Partner** and act as the technical team your company needs. We don't just handle the implementation; we **guide the strategic alignment with technology** to ensure every development directly drives your business vision."    },
+      "question": "Who owns the code and what stack do you use?",
+      "answer": "**Code is 100% yours** — no licensing strings, no vendor lock-in. We work on a modern stack (Next.js, TypeScript, Supabase/Postgres, Vercel/Firebase) with documented CI/CD. We hand over repos under your GitHub org and a technical handoff so any senior team can continue."
+    },
     "q3": {
-      "question": "How long does implementation take?",
-      "answer": "Unlike the 6-18 months it takes to build an in-house team, we work with **ready-to-deploy systems**. Generally, we get initial solutions up and running within **6 to 12 weeks**."
+      "question": "What's the pricing model?",
+      "answer": "We start with the **Free Qualification Session (30 min)**. If there's a match, a **USD 4,000 Kick-off** (Model A) follows that defines scope, architecture and the first sprints. From there, fixed monthly sprints with no surprises. For companies that need strategic direction alongside execution, Trinidad exists (Board Model)."
     },
     "q4": {
-      "question": "Are costs fixed or variable?",
-      "answer": "We work with a **fixed investment and no surprises**. Unlike hiring staff where costs can skyrocket, with Sumadots you know exactly how much you'll invest from day one to **scale your operation**."
+      "question": "How do you handle security and data ownership?",
+      "answer": "End-to-end SSL/TLS encryption, GDPR and Chile Law 19.628 compliance. We host on **your cloud account** (not ours), with audited access via IAM. Implicit NDA from the diagnostic session. No retention of sensitive data outside your perimeter."
     },
     "q5": {
-      "question": "Will you understand my business or just write code?",
-      "answer": "That is our main differentiator. We bridge **Strategy and Technology**. Our strategic business associate ensures the technical architecture aligns with your vision, guaranteeing **real adoption and ROI**."
+      "question": "I don't have an internal tech team. Can I still work with you?",
+      "answer": "Yes. We act as **your tech team** while you build yours. We document every decision and deliver a **structured technical handoff** so when you hire your CTO or senior squad, they can pick up without friction. We don't aim to lock you in — we aim to make you grow."
+    },
+    "q6": {
+      "question": "What's the difference between Sumadots and Trinidad?",
+      "answer": "**Sumadots** is the execution arm — software factory + automation. **Trinidad** is the strategic head — an alliance of fractional C-Levels (CMO + CPO + CTO). Sumadots executes what Trinidad directs. They work together or separately depending on what your operation needs."
     }
+  },
+  "FinalCTA": {
+    "eyebrow": "Next step",
+    "titleSoft": "A 30-minute session can reveal",
+    "titleStrong": "the exact bottleneck of your operation.",
+    "description": "No slides, no sales pitch. Just a 1:1 operational diagnostic with a Founder.",
+    "cta": "Schedule Operational Diagnostic",
+    "microCta": "30 min · No commitment · 1:1 with a Founder"
   }
 }

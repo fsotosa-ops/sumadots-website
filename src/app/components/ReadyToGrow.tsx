@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import FounderCard from './FounderCard';
+import { CALENDAR_URL } from '@/lib/links';
 
 export default function ReadyToGrow() {
   const t = useTranslations('ReadyToGrow');
-  const calendarLink = "https://calendar.app.google/rDk7iZ65kzBoKoS86";
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
@@ -40,8 +40,8 @@ export default function ReadyToGrow() {
               viewport={{ once: true }} 
               transition={{ delay: 0.2 }}
             >
-              <Button 
-                onClick={() => window.open(calendarLink, '_blank')}
+              <Button
+                onClick={() => window.open(CALENDAR_URL, '_blank')}
                 className="h-14 px-8 rounded-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white hover:opacity-90 font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-none cursor-pointer"
               >
                 <Calendar className="mr-2 w-5 h-5" />
