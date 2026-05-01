@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { CALENDAR_URL } from '@/lib/links';
 
 export default function Hero() {
@@ -36,10 +37,10 @@ export default function Hero() {
           >
             {t('ctaPrimary')}
           </a>
-          <a href="/s4i" className="cta-secondary">
+          <Link href="/s4i" className="cta-secondary">
             {t('ctaSecondary')}
             <span className="cta-arrow">→</span>
-          </a>
+          </Link>
         </div>
 
         <p className="reveal reveal-d3 font-mono text-[11px] text-foreground/45 tracking-[0.22em] uppercase">

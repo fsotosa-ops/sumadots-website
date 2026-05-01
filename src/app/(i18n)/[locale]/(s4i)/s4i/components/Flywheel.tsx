@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type CSSProperties, type ReactNode } from 'react';
+import { useTranslations } from 'next-intl';
 
 const TerminalIcon: ReactNode = (
   <svg
@@ -53,56 +54,17 @@ const ChartIcon: ReactNode = (
   </svg>
 );
 
-type Phase = {
-  phaseId: string;
+type PhaseId = 'P1' | 'P2' | 'P3';
+
+const PHASE_META: Array<{
+  phaseId: PhaseId;
   idx: string;
-  name: string;
-  subtitle: string;
-  items: string[];
   accent: string;
   icon: ReactNode;
-};
-
-const PHASES: Phase[] = [
-  {
-    phaseId: 'P1',
-    idx: '01',
-    name: 'Momentum',
-    subtitle: 'Coaching y Entrenamiento',
-    items: [
-      'Framework propio, agilidad',
-      'Roadmap a 3 meses',
-      'Diagnóstico de brecha operativa',
-    ],
-    accent: '#cbd5e1',
-    icon: TerminalIcon,
-  },
-  {
-    phaseId: 'P2',
-    idx: '02',
-    name: 'Acelera',
-    subtitle: 'Construcción Tech Core',
-    items: [
-      'Desarrollo en Sprints (2 sem)',
-      'Inteligencia de Datos y BI',
-      'Motores de IA personalizados',
-    ],
-    accent: '#a78bfa',
-    icon: ServerIcon,
-  },
-  {
-    phaseId: 'P3',
-    idx: '03',
-    name: 'Inyecta',
-    subtitle: 'Blueprint para Fondos',
-    items: [
-      'Postulación a fondos (GORE, BID)',
-      'Business Case de impacto',
-      'Métricas de evidencia (Rigor Tech)',
-    ],
-    accent: '#7c3aed',
-    icon: ChartIcon,
-  },
+}> = [
+  { phaseId: 'P1', idx: '01', accent: '#cbd5e1', icon: TerminalIcon },
+  { phaseId: 'P2', idx: '02', accent: '#a78bfa', icon: ServerIcon },
+  { phaseId: 'P3', idx: '03', accent: '#7c3aed', icon: ChartIcon },
 ];
 
 function polarToCartesian(
@@ -143,9 +105,29 @@ function describeArc(
   ].join(' ');
 }
 
+type LocalizedPhase = {
+  phaseId: PhaseId;
+  idx: string;
+  accent: string;
+  icon: ReactNode;
+  name: string;
+  subtitle: string;
+  items: string[];
+};
+
 export default function Flywheel() {
+  const t = useTranslations('S4i.Flywheel');
   const [activePhase, setActivePhase] = useState(0);
   const [hoveredPhase, setHoveredPhase] = useState<number | null>(null);
+
+  const PHASES: LocalizedPhase[] = PHASE_META.map((m) => {
+    const phase = t.raw(`phases.${m.phaseId}`) as {
+      name: string;
+      subtitle: string;
+      items: string[];
+    };
+    return { ...m, ...phase };
+  });
 
   const size = 600;
   const center = size / 2;
@@ -189,15 +171,14 @@ export default function Flywheel() {
     <section id="servicios" className="pt-12 pb-24 md:pb-32 scroll-mt-24">
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <div className="eyebrow mb-5">
-          <span>Servicios</span>
+          <span>{t('eyebrow')}</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-5">
-          Tres servicios.{' '}
-          <span className="text-white/55">Un sistema.</span>
+          {t('titleSoft')}{' '}
+          <span className="text-white/55">{t('titleStrong')}</span>
         </h2>
         <p className="text-base md:text-lg text-white/65 font-light leading-relaxed">
-          Un ciclo de inercia que se retroalimenta. El eje central son los OKRs
-          de tu organización.
+          {t('description')}
         </p>
       </div>
 
@@ -301,7 +282,10 @@ export default function Flywheel() {
             >
               <button
                 className="pill-label"
-                aria-label={`Servicio ${sector.phaseId}: ${sector.name}`}
+                aria-label={t('ariaLabelTemplate', {
+                  phaseId: sector.phaseId,
+                  name: sector.name,
+                })}
               >
                 <div className="pill-icon">{sector.icon}</div>
                 <span className="pill-text">{sector.name}</span>
@@ -323,14 +307,14 @@ export default function Flywheel() {
 
         <div className="hub-center-disk">
           <span className="font-mono text-[9px] text-white/40 uppercase tracking-[0.3em] mb-2">
-            [ Eje Central ]
+            {t('hubLabel')}
           </span>
           <h3 className="text-[36px] md:text-[40px] font-extrabold text-white tracking-tight leading-none mb-2">
             OKRs
           </h3>
           <div className="w-8 h-px bg-white/10 mb-2"></div>
           <span className="text-[12px] text-white/50 font-medium">
-            Estrella Polar
+            {t('hubSubtitle')}
           </span>
         </div>
       </div>
@@ -340,7 +324,7 @@ export default function Flywheel() {
           className="font-mono text-[11px] uppercase tracking-[0.28em] mb-4"
           style={{ color: active.accent }}
         >
-          {active.phaseId} · Detalle de Ingeniería
+          {active.phaseId} · {t('detailSuffix')}
         </div>
         <h4 className="text-2xl md:text-[28px] font-semibold text-white tracking-tight mb-6">
           {active.subtitle}

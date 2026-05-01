@@ -1,44 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-const FAQS = [
-  {
-    id: '01',
-    question:
-      '¿Cómo financiamos esta transformación si tenemos presupuesto limitado?',
-    answer:
-      'Entendemos la realidad del sector. Por eso, diseñamos tu proyecto tecnológico con la robustez necesaria para incluirlo en postulaciones a fondos de alto impacto (BID, GORE, fundaciones internacionales). El objetivo es que el sistema se financie con el fondo adjudicado, no con tus recursos operativos actuales.',
-  },
-  {
-    id: '02',
-    question:
-      '¿En qué etapa debe estar nuestra organización para trabajar juntos?',
-    answer:
-      'Nuestro enfoque es ideal para equipos de 15 a 50 personas que ya tienen tracción y datos, pero que están limitados por procesos manuales o el uso extremo de planillas (como Google Sheets). Si tienen el propósito claro pero les falta el equipo para escalar ordenadamente, somos el aliado correcto.',
-  },
-  {
-    id: '03',
-    question: '¿Qué los diferencia de una agencia de software tradicional?',
-    answer:
-      'Una agencia tradicional entrega código y se va. Nosotros sabemos que la tecnología no sirve de nada si tu equipo no la adopta. Nos enfocamos en la estrategia operativa, el entrenamiento y en asegurar que el sistema realmente mueva tus indicadores sociales (tu ROI Social).',
-  },
-  {
-    id: '04',
-    question: '¿Es necesario que nuestro equipo sepa de tecnología?',
-    answer:
-      'En absoluto. Nosotros operamos como tu equipo tecnológico experto. Traducimos tus necesidades operativas en soluciones automatizadas y fáciles de usar. Tu equipo solo debe preocuparse por su misión principal: generar impacto en el territorio.',
-  },
-  {
-    id: '05',
-    question: '¿Qué pasa exactamente en el diagnóstico de 30 minutos?',
-    answer:
-      'Es una sesión estratégica, no una venta de software. Analizaremos tu cuello de botella actual, revisaremos si tu organización está lista para dar el salto, y te entregaremos un mapa claro de los siguientes pasos operativos, decidamos trabajar juntos o no.',
-  },
-];
+type FaqItem = { id: string; question: string; answer: string };
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState<string | null>('01');
+  const t = useTranslations('S4i.FAQ');
+  const items = t.raw('items') as FaqItem[];
+  const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
 
   return (
     <section
@@ -47,16 +17,16 @@ export default function FAQ() {
     >
       <div className="text-center mb-16 max-w-2xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-5 leading-[1.1]">
-          Claridad antes de <span className="text-white/55">avanzar.</span>
+          {t('titleSoft')}{' '}
+          <span className="text-white/55">{t('titleStrong')}</span>
         </h2>
         <p className="text-base md:text-lg text-white/65 font-light">
-          Resolvemos las dudas más comunes de los equipos directivos y
-          fundadores con los que trabajamos.
+          {t('description')}
         </p>
       </div>
 
       <div className="space-y-2">
-        {FAQS.map((faq) => {
+        {items.map((faq) => {
           const isOpen = openId === faq.id;
 
           return (
@@ -121,7 +91,7 @@ export default function FAQ() {
           href="#agenda"
           className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors font-medium text-sm"
         >
-          ¿Tienes otra pregunta? Háblanos en el diagnóstico
+          {t('anotherQuestion')}
           <svg
             width="14"
             height="14"

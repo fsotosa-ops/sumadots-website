@@ -215,5 +215,299 @@
     "description": "Sem slides, sem pitch comercial. Apenas um diagnóstico operacional 1:1 com um Founder.",
     "cta": "Agendar Diagnóstico Operacional",
     "microCta": "Sessão 30 min · Sem compromisso · 1:1 com um Founder"
+  },
+  "S4i": {
+    "_review": "pending human review",
+    "Manifest": {
+      "title": "Sumadots for Impact | Engenharia para o Impacto Social",
+      "description": "Engenharia corporativa e estratégia operacional para ONGs que querem escalar seu impacto social sem dívida técnica. Parceiros técnicos na LatAm e EUA.",
+      "ogTitle": "Sumadots for Impact | System Match",
+      "ogDescription": "Operamos como parceiros técnicos para organizações de impacto social. Escale suas operações sem dívida técnica."
+    },
+    "Nav": {
+      "servicios": "Serviços",
+      "paraQuien": "Para Quem",
+      "clientes": "Clientes",
+      "founders": "Quem somos",
+      "sumadots": "Sumadots",
+      "cta": "Iniciar conversa",
+      "backToTop": "Voltar ao topo",
+      "logoAlt": "Sumadots for Impact"
+    },
+    "Hero": {
+      "eyebrow": "O Teto do Impacto Social",
+      "subheadLead": "O impacto social tem teto.",
+      "subheadEmphasis": "Não é por falta de propósito",
+      "subheadTrail": " — é por falta de sistema.",
+      "h1Soft": "Engenharia para o",
+      "h1Strong": "Impacto Social",
+      "description": "Escalar o impacto com rigor e eficiência. Não construímos software isolado; criamos um sistema de inércia tecnológica alinhado aos seus objetivos estratégicos.",
+      "ctaPrimary": "Agendar diagnóstico",
+      "ctaSecondary": "Ver o sistema",
+      "microCta": "Diagnóstico gratuito · 30 min · Sem compromisso"
+    },
+    "TrustStats": [
+      { "num": "+$1M", "label": "USD Captados" },
+      { "num": "+70%", "label": "Aceleração Operacional" },
+      { "num": "1.5x", "label": "Aumento Ticket Base" },
+      { "num": "7x", "label": "Aumento Ticket Novo" }
+    ],
+    "Flywheel": {
+      "eyebrow": "Serviços",
+      "titleSoft": "Três serviços.",
+      "titleStrong": "Um sistema.",
+      "description": "Um ciclo de inércia que se retroalimenta. O eixo central são os OKRs da sua organização.",
+      "hubLabel": "[ Eixo Central ]",
+      "hubSubtitle": "Estrela Polar",
+      "detailSuffix": "Detalhe de Engenharia",
+      "ariaLabelTemplate": "Serviço {phaseId}: {name}",
+      "phases": {
+        "P1": {
+          "name": "Momentum",
+          "subtitle": "Coaching e Treinamento",
+          "items": [
+            "Framework próprio, agilidade",
+            "Roadmap de 3 meses",
+            "Diagnóstico de gap operacional"
+          ]
+        },
+        "P2": {
+          "name": "Acelera",
+          "subtitle": "Construção Tech Core",
+          "items": [
+            "Desenvolvimento em Sprints (2 sem)",
+            "Inteligência de Dados e BI",
+            "Motores de IA personalizados"
+          ]
+        },
+        "P3": {
+          "name": "Injeta",
+          "subtitle": "Blueprint para Fundos",
+          "items": [
+            "Postulação a fundos (GORE, BID)",
+            "Business Case de impacto",
+            "Métricas de evidência (Rigor Tech)"
+          ]
+        }
+      }
+    },
+    "ParaQuien": {
+      "eyebrow": "System Match",
+      "titleSoft": "ONGs com dados e vontade,",
+      "titleStrong": "e sem braço executor.",
+      "descriptionLead": "Operamos como parceiros técnicos para organizações de impacto na ",
+      "descriptionRegion": "LATAM e Estados Unidos",
+      "descriptionTrail": ". Não trabalhamos com ideias no papel, trabalhamos com tração.",
+      "listenLabel": "[ Sistemas Escutando Sinais ]",
+      "triggerLabelTemplate": "Trigger {id}",
+      "triggers": {
+        "T1": {
+          "title": "Colapso Operacional",
+          "description": "Sua equipe (15-50 pessoas) opera com Google Sheets ou ferramentas desconectadas que já chegaram ao limite e travam a execução."
+        },
+        "T2": {
+          "title": "Captação de Fundos",
+          "description": "Você está postulando a fundos de +US$50K (GORE, BID) e precisa de uma arquitetura técnica nível sênior para garantir a adjudicação."
+        },
+        "T3": {
+          "title": "Aceleração Ativa",
+          "description": "Você é fellow do Propel, Ashoka ou outra rede global e precisa de um parceiro técnico confiável para executar sua visão."
+        }
+      }
+    },
+    "Verticales": ["Educação", "Saúde", "Empregabilidade", "Microfinanças"],
+    "DiagnosticoRapido": {
+      "eyebrow": "System Scan",
+      "titleSoft": "Diagnóstico",
+      "titleStrong": "Estrutural.",
+      "instructionsLead": "Use as teclas",
+      "instructionsTrail": "para escanear sua organização em 60 segundos.",
+      "moduleLabel": "MODULE",
+      "scannedLabel": "% SCANNED",
+      "revert": "< REVERTER_INPUT",
+      "saving": "> SALVANDO_INPUT...",
+      "compiling": "> COMPILANDO_ARQUITETURA...",
+      "decrypting": "> DESCRIPTOGRAFANDO_MATCH...",
+      "emailHeader": "> SYSTEM_READY",
+      "emailTitle": "Insira seu email para receber o diagnóstico",
+      "emailDescription": "Compilamos seu relatório de arquitetura e seu índice de match. Para qual endereço enviamos?",
+      "emailPlaceholder": "voce@email.com",
+      "emailSubmit": "[ EXECUTAR RELATÓRIO ]",
+      "resultHeader": "> DECRYPTION_SUCCESS",
+      "resultIndex": "System Match Index",
+      "recommendedLabel": "> RECOMMENDED_PATH",
+      "ctaIntegrate": "Iniciar Integração",
+      "reset": "[ RESET_SYSTEM ]",
+      "yesPrefix": "Sim",
+      "questions": [
+        {
+          "id": "vertical",
+          "question": "Em qual setor sua organização atua?",
+          "options": ["Educação", "Saúde", "Empregabilidade", "Microfinanças", "Outro setor social"]
+        },
+        {
+          "id": "team",
+          "question": "Quantas pessoas trabalham na sua organização?",
+          "options": ["Menos de 5", "5 – 15", "15 – 50", "Mais de 50"]
+        },
+        {
+          "id": "stack",
+          "question": "Qual descreve melhor seu stack tecnológico atual?",
+          "options": ["Principalmente Google Sheets / planilhas", "Ferramentas SaaS dispersas", "Sistema integrado funcional", "Stack maduro com BI ou IA"]
+        },
+        {
+          "id": "accelerator",
+          "question": "Você faz parte de uma aceleradora ou rede de impacto?",
+          "options": ["Sim (Propel, Ashoka ou outra)", "Em processo de aplicação", "Não no momento"]
+        },
+        {
+          "id": "funds",
+          "question": "Você está preparando postulação a fundos de impacto?",
+          "options": ["Sim, nos próximos 6 meses", "Em 6 a 12 meses", "Não no momento"]
+        },
+        {
+          "id": "metrics",
+          "question": "Como você mede o impacto do seu programa?",
+          "options": ["Métricas claras e sistematizadas", "Dados parciais, sem sistema", "É algo que queremos melhorar"]
+        },
+        {
+          "id": "bottleneck",
+          "question": "Qual é seu principal gargalo?",
+          "options": ["Operações manuais que consomem tempo", "Falta de evidência técnica para fundos", "Sem sistema para escalar o impacto", "Equipe sem capacidades técnicas"]
+        }
+      ],
+      "phases": {
+        "P1": {
+          "name": "P1 / Momentum",
+          "message": "Sua organização tem vontade e dados. Você começa com coaching e um roadmap de 3 meses que ordena o caminho antes de construir."
+        },
+        "P2": {
+          "name": "P2 / Acelera",
+          "message": "Você está em momentum operacional. É hora de construir o tech core que rompe seu teto de crescimento — MVP em sprints de 2 semanas."
+        },
+        "P3": {
+          "name": "P3 / Injeta",
+          "message": "Você está em momento de ouro: aceleradora + postulação próxima. P3 te dá a justificativa técnica nível engenharia sênior que avaliadores não rejeitam."
+        }
+      }
+    },
+    "Clients": {
+      "eyebrow": "Trusted By",
+      "titleSoft": "Organizações que",
+      "titleStrong": "já escalaram.",
+      "logos": [
+        { "name": "Focus", "src": "/s4i/clients/focus-logo-white.png" },
+        { "name": "Fundación Summer", "src": "/s4i/clients/fsummer-logo-white.png" },
+        { "name": "América Solidaria", "src": "/s4i/clients/logo-white-anericasolidaria.svg" }
+      ],
+      "testimonials": [
+        {
+          "id": "01",
+          "quote": "S4i tem sido fundamental na transformação dos nossos processos internos, gerando aprendizado para nossa organização e nossos stakeholders. A abordagem deles permite profissionalizar nosso trabalho.",
+          "name": "Karen Sarabia",
+          "role": "Coordenadora de Transformação · América Solidaria",
+          "verified": "NODE_VERIFIED // AS_CHILE"
+        },
+        {
+          "id": "02",
+          "quote": "A engenharia da Sumadots for Impact nos permitiu levar nossa gestão de dados a um nível de rigor corporativo. É o aliado técnico que as fundações precisam para escalar seu propósito.",
+          "name": "Emanuel Pacheco",
+          "role": "Diretor Executivo · Fundación Summer",
+          "verified": "NODE_VERIFIED // F_SUMMER"
+        }
+      ]
+    },
+    "Founders": {
+      "eyebrow": "A Aliança · s4i",
+      "titleLine1": "Dois mundos.",
+      "titleLine2": "Uma única obsessão:",
+      "titleLine3": "Escalar o ROI Social.",
+      "engineeringLabel": "Engineering Authority",
+      "list": [
+        {
+          "id": "pipe",
+          "tag": "[ THE_ARCHITECT ]",
+          "name": "Pipe Soto",
+          "role": "Co-Founder & Lead Architect",
+          "company": "SUMADOTS FOR IMPACT",
+          "bio": "Construí sistemas para +100M de usuários na LATAM (Mercado Libre, Falabella). Atualmente lidero a Sumadots (S4i) e projetos de rastreabilidade na Amazônia com a Red Impacto Latam. Minha missão é clara: injetar o rigor do Big Tech nos desafios sociais. Que a tecnologia seja seu motor, não seu teto.",
+          "milestones": [
+            "+100M Usuários Escalados",
+            "Comitê Andino Amazônico",
+            "Mentor de Líderes Sociais (MIAMI · LATAM)"
+          ]
+        },
+        {
+          "id": "ed",
+          "tag": "[ THE_STRATEGIST ]",
+          "name": "Ed Spohr",
+          "role": "Co-Founder & Director of Growth",
+          "company": "SUMADOTS FOR IMPACT",
+          "bio": "15+ anos desenhando soluções digitais de alta adoção na LATAM, hoje focado em IA generativa e agentes inteligentes para fundações e instituições de impacto social.",
+          "milestones": [
+            "Ex-Microsoft, JLL e Bechtel",
+            "Certificado Prosci, Scrum e Azure",
+            "Growth Buddies SpA"
+          ]
+        }
+      ]
+    },
+    "Booking": {
+      "eyebrow": "Agenda · Diagnóstico",
+      "titleSoft": "Vamos começar com um",
+      "titleStrong": "diagnóstico de 30 minutos.",
+      "description": "Sem compromisso. Você leva um mapa claro do seu próximo passo — mesmo que não terminemos trabalhando juntos.",
+      "iframeTitle": "Agendar diagnóstico — Growth Social Impact",
+      "whatsapp": "WhatsApp"
+    },
+    "FAQ": {
+      "titleSoft": "Clareza antes de",
+      "titleStrong": "avançar.",
+      "description": "Resolvemos as dúvidas mais comuns das equipes diretivas e fundadores com quem trabalhamos.",
+      "anotherQuestion": "Tem outra pergunta? Fale com a gente no diagnóstico",
+      "items": [
+        {
+          "id": "01",
+          "question": "Como financiamos essa transformação se temos orçamento limitado?",
+          "answer": "Entendemos a realidade do setor. Por isso, desenhamos seu projeto tecnológico com a robustez necessária para incluí-lo em postulações a fundos de alto impacto (BID, GORE, fundações internacionais). O objetivo é que o sistema seja financiado pelo fundo adjudicado, não pelos seus recursos operacionais atuais."
+        },
+        {
+          "id": "02",
+          "question": "Em que estágio nossa organização precisa estar para trabalharmos juntos?",
+          "answer": "Nossa abordagem é ideal para equipes de 15 a 50 pessoas que já têm tração e dados, mas que estão limitadas por processos manuais ou pelo uso extremo de planilhas (como Google Sheets). Se vocês têm o propósito claro mas falta a equipe para escalar de forma ordenada, somos o aliado certo."
+        },
+        {
+          "id": "03",
+          "question": "O que diferencia vocês de uma agência de software tradicional?",
+          "answer": "Uma agência tradicional entrega código e vai embora. Sabemos que a tecnologia não serve de nada se sua equipe não a adota. Focamos na estratégia operacional, no treinamento e em garantir que o sistema realmente mova seus indicadores sociais (seu ROI Social)."
+        },
+        {
+          "id": "04",
+          "question": "Nossa equipe precisa entender de tecnologia?",
+          "answer": "De jeito nenhum. Operamos como sua equipe tecnológica especialista. Traduzimos suas necessidades operacionais em soluções automatizadas e fáceis de usar. Sua equipe só precisa se preocupar com sua missão principal: gerar impacto no território."
+        },
+        {
+          "id": "05",
+          "question": "O que acontece exatamente no diagnóstico de 30 minutos?",
+          "answer": "É uma sessão estratégica, não uma venda de software. Analisaremos seu gargalo atual, revisaremos se sua organização está pronta para dar o salto, e te entregaremos um mapa claro dos próximos passos operacionais, decidindo trabalhar juntos ou não."
+        }
+      ]
+    },
+    "Footer": {
+      "tagline": "Engenharia e estratégia operacional para organizações que buscam escalar seu impacto social sem dívida técnica.",
+      "logoAlt": "Sumadots for Impact",
+      "ecosystemHeading": "Ecossistema",
+      "linkSumadots": "Sumadots ↗",
+      "contactHeading": "Contato",
+      "linkBooking": "Agendar Diagnóstico",
+      "linkContact": "Contato",
+      "systemStatus": "System · Operational",
+      "rights": "© {year} SUMADOTS FOR IMPACT · All Rights Reserved",
+      "city": "SCL · MIA"
+    },
+    "WhatsApp": {
+      "prefill": "Olá Growth Social Impact! Vim do site e gostaria de agendar um diagnóstico de 30 min. Podemos coordenar?",
+      "ariaFloating": "Conversar pelo WhatsApp"
+    }
   }
 }

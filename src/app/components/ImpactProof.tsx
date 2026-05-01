@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Quote } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -107,10 +108,10 @@ export default function ImpactProof() {
         </div>
 
         <div className="flex justify-center">
-          <a href="/s4i" className="cta-secondary">
+          <Link href="/s4i" className="cta-secondary">
             {t('seeMore')}
             <span className="cta-arrow">→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,7 +1,8 @@
 import type { CSSProperties } from 'react';
-import { VERTICALES, TRIGGERS } from '../constants';
+import { useTranslations } from 'next-intl';
+import { TRIGGER_ACCENTS, TRIGGER_IDS, type TriggerId } from '../constants';
 
-const Icons: Record<'T1' | 'T2' | 'T3', React.ReactNode> = {
+const Icons: Record<TriggerId, React.ReactNode> = {
   T1: (
     <svg
       width="18"
@@ -52,6 +53,10 @@ const Icons: Record<'T1' | 'T2' | 'T3', React.ReactNode> = {
 };
 
 export default function ParaQuien() {
+  const t = useTranslations('S4i.ParaQuien');
+  const tRoot = useTranslations('S4i');
+  const verticales = tRoot.raw('Verticales') as string[];
+
   return (
     <section
       id="para-quien"
@@ -59,24 +64,24 @@ export default function ParaQuien() {
     >
       <div className="text-center mb-14 max-w-2xl mx-auto">
         <div className="eyebrow mb-5">
-          <span>System Match</span>
+          <span>{t('eyebrow')}</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-5 leading-[1.1]">
-          ONGs con datos y voluntad,
+          {t('titleSoft')}
           <br />
-          <span className="text-white/55">y sin brazo ejecutor.</span>
+          <span className="text-white/55">{t('titleStrong')}</span>
         </h2>
         <p className="text-base md:text-lg text-white/65 font-light leading-relaxed">
-          Operamos como partners técnicos para organizaciones de impacto en{' '}
+          {t('descriptionLead')}
           <span className="text-white font-medium">
-            LATAM y Estados Unidos
+            {t('descriptionRegion')}
           </span>
-          . No trabajamos con ideas en papel, trabajamos con tracción.
+          {t('descriptionTrail')}
         </p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-2 mb-16">
-        {VERTICALES.map((v) => (
+        {verticales.map((v) => (
           <span key={v} className="capability-chip">
             {v}
           </span>
@@ -85,39 +90,42 @@ export default function ParaQuien() {
 
       <div className="text-center mb-8">
         <span className="font-mono text-[11px] text-white/40 uppercase tracking-[0.3em]">
-          [ Sistemas Escuchando Señales ]
+          {t('listenLabel')}
         </span>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        {TRIGGERS.map((t) => (
-          <div
-            key={t.id}
-            className="trigger-card group"
-            style={{ ['--trigger-accent' as string]: t.accent } as CSSProperties}
-          >
-            <div className="trigger-glow" />
+        {TRIGGER_IDS.map((id) => {
+          const accent = TRIGGER_ACCENTS[id];
+          return (
+            <div
+              key={id}
+              className="trigger-card group"
+              style={{ ['--trigger-accent' as string]: accent } as CSSProperties}
+            >
+              <div className="trigger-glow" />
 
-            <div className="trigger-header">
-              <div className="trigger-icon">{Icons[t.id]}</div>
+              <div className="trigger-header">
+                <div className="trigger-icon">{Icons[id]}</div>
 
-              <span className="trigger-tag flex items-center gap-2">
-                <span
-                  className="w-1.5 h-1.5 rounded-full animate-pulse"
-                  style={{
-                    backgroundColor: t.accent,
-                    boxShadow: `0 0 8px ${t.accent}`,
-                  }}
-                />
-                Trigger {t.id}
-              </span>
+                <span className="trigger-tag flex items-center gap-2">
+                  <span
+                    className="w-1.5 h-1.5 rounded-full animate-pulse"
+                    style={{
+                      backgroundColor: accent,
+                      boxShadow: `0 0 8px ${accent}`,
+                    }}
+                  />
+                  {t('triggerLabelTemplate', { id })}
+                </span>
+              </div>
+
+              <h3 className="trigger-title">{t(`triggers.${id}.title`)}</h3>
+
+              <p className="trigger-desc">{t(`triggers.${id}.description`)}</p>
             </div>
-
-            <h3 className="trigger-title">{t.title}</h3>
-
-            <p className="trigger-desc">{t.description}</p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

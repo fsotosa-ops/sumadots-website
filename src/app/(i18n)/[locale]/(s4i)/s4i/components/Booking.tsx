@@ -1,7 +1,12 @@
-import { BOOKING_URL, CONTACT_EMAIL, WHATSAPP_URL } from '../constants';
+import { useTranslations } from 'next-intl';
+import { BOOKING_URL, CONTACT_EMAIL, buildWhatsAppUrl } from '../constants';
 import WhatsAppIcon from './icons/WhatsAppIcon';
 
 export default function Booking() {
+  const t = useTranslations('S4i.Booking');
+  const tWa = useTranslations('S4i.WhatsApp');
+  const whatsappUrl = buildWhatsAppUrl(tWa('prefill'));
+
   return (
     <section
       id="agenda"
@@ -9,15 +14,14 @@ export default function Booking() {
     >
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <div className="eyebrow mb-5">
-          <span>Agenda · Diagnóstico</span>
+          <span>{t('eyebrow')}</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-5 leading-[1.1]">
-          Empecemos con un{' '}
-          <span className="text-white/55">diagnóstico de 30 minutos.</span>
+          {t('titleSoft')}{' '}
+          <span className="text-white/55">{t('titleStrong')}</span>
         </h2>
         <p className="text-base md:text-lg text-white/65 font-light leading-relaxed">
-          Sin compromiso. Te llevás un mapa claro de tu próximo paso — aunque
-          no terminemos trabajando juntos.
+          {t('description')}
         </p>
       </div>
 
@@ -50,7 +54,7 @@ export default function Booking() {
 
         <iframe
           src={BOOKING_URL}
-          title="Agendar diagnóstico — Growth Social Impact"
+          title={t('iframeTitle')}
           width="100%"
           height="600"
           frameBorder="0"
@@ -60,12 +64,12 @@ export default function Booking() {
 
       <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mt-8">
         <a
-          href={WHATSAPP_URL}
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="contact-fallback contact-whatsapp"
         >
-          <WhatsAppIcon size={13} /> WhatsApp
+          <WhatsAppIcon size={13} /> {t('whatsapp')}
         </a>
         <span className="text-white/15 font-mono">·</span>
         <a href={`mailto:${CONTACT_EMAIL}`} className="contact-fallback">

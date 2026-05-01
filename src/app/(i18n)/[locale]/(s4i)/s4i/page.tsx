@@ -1,5 +1,4 @@
-export const dynamic = 'force-static';
-
+import { setRequestLocale } from 'next-intl/server';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Flywheel from './components/Flywheel';
@@ -12,7 +11,16 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
-export default function S4iPage() {
+export const dynamic = 'force-static';
+
+export default async function S4iPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div id="top">
       <div className="bg-grid"></div>

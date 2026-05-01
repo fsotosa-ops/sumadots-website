@@ -32,12 +32,12 @@ export default function Navbar() {
         >
           {t('services')}
         </Link>
-        <a
+        <Link
           href="/s4i"
           className="hover:text-foreground transition-colors"
         >
           {t('impact')}
-        </a>
+        </Link>
         <Link
           href="/#contact"
           className="hover:text-foreground transition-colors"

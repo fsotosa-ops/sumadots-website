@@ -57,13 +57,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/s4i"
                   className="text-sm text-foreground/70 hover:text-foreground transition-colors inline-flex items-center gap-1"
                 >
                   {t('linkImpact')}
                   <span className="text-foreground/40">↗</span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a
