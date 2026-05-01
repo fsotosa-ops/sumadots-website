@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   description:
     'Ingeniería corporativa y estrategia operativa para ONGs que buscan escalar su impacto social sin deuda técnica. Partners técnicos en LatAm y EE.UU.',
   metadataBase: new URL('https://sumadots.com'),
+  icons: {
+    icon: [
+      { url: '/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicons/apple-touch-icon-180x180.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: 'Sumadots for Impact | System Match',
     description:

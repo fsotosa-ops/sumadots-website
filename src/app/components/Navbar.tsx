@@ -20,7 +20,7 @@ export default function Navbar() {
           alt="Sumadots Logo"
           width={300}
           height={64}
-          className="h-14 md:h-16 w-auto dark:invert object-contain"
+          className="h-20 md:h-24 w-auto dark:invert object-contain"
           priority
         />
       </Link>
